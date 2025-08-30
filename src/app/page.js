@@ -128,7 +128,7 @@ const Portfolio = () => {
             Vali Hameed
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-            2nd Year Computer Science Student | Software Engineer | Problem Solver
+            2nd Year Computer Science Student | Full Stack Developer | Problem Solver
           </p>
           
           <div className="flex justify-center space-x-6 mb-12">
@@ -152,36 +152,36 @@ const Portfolio = () => {
         </div>
       </section>
 
+
       {/* About Section */}
       <section id="about" className="py-20 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
             About Me
           </h2>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
+          <div className="flex flex-col justify-center items-center text-center">
+            <div className="max-w-3xl">
               <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                I'm a passionate software engineer with over 5 years of experience building scalable web applications 
-                and mobile solutions. I thrive on solving complex problems and turning innovative ideas into reality.
+                I'm a passionate 2nd year Computer Science student with a strong foundation in software development.
+                I thrive on solving complex problems and turning innovative ideas into reality through code.
               </p>
-              <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                My expertise spans the full development stack, from creating intuitive user interfaces to designing 
-                robust backend architectures. I'm constantly learning new technologies and best practices to stay at 
+              <p className="text-lg text-gray-300 leading-relaxed mb-8">
+                My expertise spans multiple programming languages and technologies, from creating intuitive user interfaces to designing 
+                robust backend systems. I'm constantly learning new technologies and best practices to stay at 
                 the forefront of software development.
               </p>
-              <div className="flex space-x-4">
-                <button className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg transition-colors">
-                  Download Resume
-                </button>
-                <button
-                  onClick={() => scrollToSection('contact')}
-                  className="border border-blue-600 text-blue-400 hover:bg-blue-600 hover:text-white px-6 py-3 rounded-lg transition-colors"
-                >
-                  Get In Touch
-                </button>
-              </div>
             </div>
-
+            <div className="flex justify-center space-x-4">
+              <button className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg transition-colors">
+                Download Resume
+              </button>
+              <button
+                onClick={() => scrollToSection('contact')}
+                className="border border-blue-600 text-blue-400 hover:bg-blue-600 hover:text-white px-6 py-3 rounded-lg transition-colors"
+              >
+                Get In Touch
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -311,18 +311,7 @@ const Portfolio = () => {
             </a>
           </div>
 
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-8 rounded-2xl">
-            <h3 className="text-2xl font-bold mb-4">Ready to start a project?</h3>
-            <p className="text-lg mb-6 opacity-90">
-              Let's discuss how we can bring your ideas to life with cutting-edge technology.
-            </p>
-            <a
-              href="mailto:vali.hameed@email.com"
-              className="bg-white text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-block"
-            >
-              Start a Conversation
-            </a>
-          </div>
+         
         </div>
       </section>
 
@@ -330,7 +319,8 @@ const Portfolio = () => {
       <footer className="py-8 px-4 border-t border-gray-800">
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-gray-400">
-            © 2025 Vali Hameed. Built with Next.js & Tailwind CSS.
+            © 2025 Vali Hameed<br /> 
+            Built with Next.js & Tailwind CSS
           </p>
         </div>
       </footer>
