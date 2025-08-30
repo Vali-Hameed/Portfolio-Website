@@ -33,10 +33,9 @@ const Portfolio = () => {
   };
 
   const skills = [
-    { category: 'Frontend', icon: Globe, items: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Vue.js'] },
-    { category: 'Backend', icon: Database, items: ['Node.js', 'Python', 'Express.js', 'PostgreSQL', 'MongoDB'] },
-    { category: 'Mobile', icon: Smartphone, items: ['React Native', 'Flutter', 'iOS', 'Android'] },
-    { category: 'Tools', icon: Code, items: ['Git', 'Docker', 'AWS', 'Jest', 'Webpack'] }
+    { category: 'Frontend', icon: Globe, items: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'] },
+    { category: 'Backend', icon: Database, items: ['Node.js', 'Python', 'PostgreSQL','Spring Boot','Java'] },
+    { category: 'Tools', icon: Code, items: ['Git', 'Docker', 'AWS', 'Azure'] }
   ];
 
   const projects = [
@@ -56,31 +55,8 @@ const Portfolio = () => {
       github: 'https://github.com/Vali-Hameed/Python-Car-Game-NEA',
       live: '#',
       image: 'bg-gradient-to-br from-red-500 to-orange-500'
-    },
-    {
-      title: 'E-Commerce Platform',
-      description: 'Full-stack e-commerce solution with real-time inventory management, payment processing, and admin dashboard.',
-      tech: ['Next.js', 'Node.js', 'PostgreSQL', 'Stripe API'],
-      github: '#',
-      live: '#',
-      image: 'bg-gradient-to-br from-blue-500 to-purple-600'
-    },
-    {
-      title: 'Task Management App',
-      description: 'Collaborative project management tool with real-time updates, team chat, and advanced analytics.',
-      tech: ['React', 'Express.js', 'Socket.io', 'MongoDB'],
-      github: '#',
-      live: '#',
-      image: 'bg-gradient-to-br from-green-500 to-blue-500'
-    },
-    {
-      title: 'Weather Analytics Dashboard',
-      description: 'Data visualization platform that aggregates weather data from multiple APIs with predictive analytics.',
-      tech: ['Vue.js', 'Python', 'Flask', 'Chart.js'],
-      github: '#',
-      live: '#',
-      image: 'bg-gradient-to-br from-orange-500 to-red-500'
     }
+
   ];
 
   return (
@@ -152,7 +128,7 @@ const Portfolio = () => {
             Vali Hameed
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-            Full-Stack Software Engineer crafting innovative digital solutions with modern technologies
+            2nd Year Computer Science Student | Software Engineer | Problem Solver
           </p>
           
           <div className="flex justify-center space-x-6 mb-12">
@@ -205,16 +181,7 @@ const Portfolio = () => {
                 </button>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-blue-500/10 to-purple-500/10 p-8 rounded-2xl">
-              <h3 className="text-2xl font-semibold mb-4 text-blue-400">Quick Facts</h3>
-              <ul className="space-y-3 text-gray-300">
-                <li>🎓 Computer Science Graduate</li>
-                <li>💼 5+ Years Professional Experience</li>
-                <li>🌍 Remote & On-site Available</li>
-                <li>🚀 20+ Projects Delivered</li>
-                <li>☕ Coffee Enthusiast & Problem Solver</li>
-              </ul>
-            </div>
+
           </div>
         </div>
       </section>
