@@ -192,7 +192,7 @@ const Portfolio = () => {
           <h2 className="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
             Skills & Technologies
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {skills.map((skill) => (
               <div key={skill.category} className="bg-gray-800 p-6 rounded-xl hover:bg-gray-750 transition-colors">
                 <div className="flex items-center mb-4">
