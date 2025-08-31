@@ -33,7 +33,7 @@ const Portfolio = () => {
   };
 
   const skills = [
-    { category: 'Frontend', icon: Globe, items: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'] },
+    { category: 'Frontend', icon: Globe, items: ['React', 'Next.js', 'Java Swing', 'Tailwind CSS'] },
     { category: 'Backend', icon: Database, items: ['Node.js', 'Python', 'PostgreSQL','Spring Boot','Java'] },
     { category: 'Tools', icon: Code, items: ['Git', 'Docker', 'AWS', 'Azure'] }
   ];
@@ -128,11 +128,11 @@ const Portfolio = () => {
             Vali Hameed
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-            2nd Year Computer Science Student | Full Stack Developer | Problem Solver
+            2nd Year Computer Science Student | Full Stack Developer | Aspiring Software Engineer
           </p>
           
           <div className="flex justify-center space-x-6 mb-12">
-            <a href="mailto:vali.hameed@email.com" className="p-3 bg-blue-600 hover:bg-blue-700 rounded-full transition-colors">
+            <a href="mailto:valihameed88@gmail.com" className="p-3 bg-blue-600 hover:bg-blue-700 rounded-full transition-colors">
               <Mail size={24} />
             </a>
             <a href="https://github.com/Vali-Hameed" className="p-3 bg-gray-700 hover:bg-gray-600 rounded-full transition-colors" target="_blank" rel="noopener noreferrer">
@@ -162,13 +162,15 @@ const Portfolio = () => {
           <div className="flex flex-col justify-center items-center text-center">
             <div className="max-w-3xl">
               <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                I'm a passionate 2nd year Computer Science student with a strong foundation in software development.
-                I thrive on solving complex problems and turning innovative ideas into reality through code.
+                I am a second-year Computer Science student at Lancaster University driven by a passion for building complete, end-to-end software solutions. 
+                My journey into development is rooted in a love for algorithmic problem-solving, which I've applied using Java to build projects 
+                like a tram network pathfinding visualizer that implements Dijkstra's and A* algorithms.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed mb-8">
-                My expertise spans multiple programming languages and technologies, from creating intuitive user interfaces to designing 
-                robust backend systems. I'm constantly learning new technologies and best practices to stay at 
-                the forefront of software development.
+              I translate this logical foundation into creating dynamic user experiences. 
+              I have used Python and Pygame to architect a full 2D racing game from scratch, and I leverage modern web technologies like 
+              Next.js, React, and Tailwind CSS to build performant, responsive web applications like this very portfolio. 
+              My drive to continuously improve means I'm always expanding my toolkit, currently deepening my knowledge of containerization with technologies like Docker and spring Boot for backend development.
               </p>
             </div>
             <div className="flex justify-center space-x-4">
