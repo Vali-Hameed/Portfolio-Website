@@ -174,8 +174,11 @@ const Portfolio = () => {
               </p>
             </div>
             <div className="flex justify-center space-x-4">
-              <button className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg transition-colors">
-                Download Resume
+              <button 
+                onClick={() => window.open('/Vali_Hameed_CV.pdf', '_blank')}
+                className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg transition-colors">
+                View CV
+                
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
