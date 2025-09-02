@@ -280,8 +280,8 @@ const Portfolio = () => {
             Let&apos;s Work Together
           </h2>
           <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
-            I'm always interested in new opportunities and exciting projects. 
-            Whether you're a recruiter or looking to collaborate, let's connect!
+            I&apos;m always interested in new opportunities and exciting projects. 
+            Whether you&apos;re a recruiter or looking to collaborate, let&apos;s connect!
           </p>
           
           <div className="grid md:grid-cols-3 gap-8 mb-12">
