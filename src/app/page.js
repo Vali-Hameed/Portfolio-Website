@@ -319,6 +319,85 @@ const Portfolio = () => {
          
         </div>
       </section>
+          <div className="max-w-xl mx-auto mt-20 mb-20 px-4">
+      <form
+        action="https://formspree.io/f/xyzdngel" // <-- IMPORTANT: REPLACE THIS
+        method="POST"
+        // Form styling: adds vertical spacing, background, padding, rounded corners, and a shadow.
+        className="space-y-6 bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md"
+      >
+        <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent text-center">
+          Get In Touch
+        </h2>
+        
+        {/* Email Input Field */}
+        <div>
+          <label 
+            htmlFor="email" 
+            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+          >
+            Your Email
+          </label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            required
+            placeholder="you@example.com"
+            // Styling for the input field: full width, padding, border, rounded corners, and focus states.
+            className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-150 ease-in-out"
+          />
+        </div>
+                {/* Subject Input Field */}
+        <div>
+          <label 
+            htmlFor="subject" 
+            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+          >
+            Subject
+          </label>
+          <input
+            id="subject"
+            type="text"
+            name="subject"
+            required
+            placeholder="Re:"
+            // Styling for the input field: full width, padding, border, rounded corners, and focus states.
+            className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-150 ease-in-out"
+          />
+        </div>
+        
+        {/* Message Text Area */}
+        <div>
+          <label 
+            htmlFor="message" 
+            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+          >
+            Your Message
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4" // Sets a default height for the text area.
+            required
+            placeholder="Leave your message here..."
+            // Similar styling to the input field.
+            className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-150 ease-in-out"
+          ></textarea>
+        </div>
+        
+        {/* Submit Button */}
+        <div>
+          <button
+            type="submit"
+            // Styling for the button to match the "Download CV" button theme.
+            className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 dark:focus:ring-offset-gray-800 focus:ring-indigo-500 transition-transform transform hover:scale-105 duration-300 ease-in-out"
+          >
+            Send Message
+          </button>
+        </div>
+      </form>
+    </div>
 
       {/* Footer */}
       <footer className="py-8 px-4 border-t border-gray-800">
