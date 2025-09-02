@@ -176,13 +176,13 @@ const Portfolio = () => {
             <div className="flex justify-center space-x-4">
               <button 
                 onClick={() => window.open('/Vali_Hameed_CV.pdf', '_blank')}
-                className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg transition-colors">
+                className=" items-center justify-center px-6 py-3  border border-transparent  font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-offset-gray-800 focus:ring-indigo-500 transition-transform transform hover:scale-105 duration-300 ease-in-out">
                 View CV
                 
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
-                className="border border-blue-600 text-blue-400 hover:bg-blue-600 hover:text-white px-6 py-3 rounded-lg transition-colors"
+                className="border border-indigo-600 text-indigo-400 hover:bg-indigo-600 hover:text-white px-6 py-3 rounded-lg transition-colors hover:scale-105 duration-300 ease-in-out"
               >
                 Get In Touch
               </button>
@@ -324,7 +324,7 @@ const Portfolio = () => {
         action="https://formspree.io/f/xyzdngel" // <-- IMPORTANT: REPLACE THIS
         method="POST"
         // Form styling: adds vertical spacing, background, padding, rounded corners, and a shadow.
-        className="space-y-6 bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md"
+        className="space-y-6  bg-gray-800 p-8 rounded-lg shadow-md"
       >
         <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent text-center">
           Get In Touch
@@ -334,7 +334,7 @@ const Portfolio = () => {
         <div>
           <label 
             htmlFor="email" 
-            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+            className="block text-sm font-medium  text-gray-300 mb-2"
           >
             Your Email
           </label>
@@ -345,14 +345,14 @@ const Portfolio = () => {
             required
             placeholder="you@example.com"
             // Styling for the input field: full width, padding, border, rounded corners, and focus states.
-            className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-150 ease-in-out"
+            className="w-full px-4 py-2 border  border-gray-600 rounded-md  bg-gray-700 text-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-150 ease-in-out"
           />
         </div>
                 {/* Subject Input Field */}
         <div>
           <label 
             htmlFor="subject" 
-            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+            className="block text-sm font-medium  text-gray-300 mb-2"
           >
             Subject
           </label>
@@ -363,7 +363,7 @@ const Portfolio = () => {
             required
             placeholder="Re:"
             // Styling for the input field: full width, padding, border, rounded corners, and focus states.
-            className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-150 ease-in-out"
+            className="w-full px-4 py-2 border  border-gray-600 rounded-md  bg-gray-700 text-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-150 ease-in-out"
           />
         </div>
         
@@ -371,7 +371,7 @@ const Portfolio = () => {
         <div>
           <label 
             htmlFor="message" 
-            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+            className="block text-sm font-medium  text-gray-300 mb-2"
           >
             Your Message
           </label>
@@ -382,7 +382,7 @@ const Portfolio = () => {
             required
             placeholder="Leave your message here..."
             // Similar styling to the input field.
-            className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-150 ease-in-out"
+            className="w-full px-4 py-2 border  border-gray-600 rounded-md  bg-gray-700 text-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-150 ease-in-out"
           ></textarea>
         </div>
         
@@ -391,7 +391,7 @@ const Portfolio = () => {
           <button
             type="submit"
             // Styling for the button to match the "Download CV" button theme.
-            className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 dark:focus:ring-offset-gray-800 focus:ring-indigo-500 transition-transform transform hover:scale-105 duration-300 ease-in-out"
+            className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-offset-gray-800 focus:ring-indigo-500 transition-transform transform hover:scale-105 duration-300 ease-in-out"
           >
             Send Message
           </button>
