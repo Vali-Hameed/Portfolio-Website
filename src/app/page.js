@@ -163,14 +163,14 @@ const Portfolio = () => {
             <div className="max-w-3xl">
               <p className="text-lg text-gray-300 leading-relaxed mb-6">
                 I am a second-year Computer Science student at Lancaster University driven by a passion for building complete, end-to-end software solutions. 
-                My journey into development is rooted in a love for algorithmic problem-solving, which I've applied using Java to build projects 
-                like a tram network pathfinding visualizer that implements Dijkstra's and A* algorithms.
+                My journey into development is rooted in a love for algorithmic problem-solving, which I&apos;ve applied using Java to build projects 
+                like a tram network pathfinding visualizer that implements Dijkstra&apos;s and A* algorithms.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed mb-8">
               I translate this logical foundation into creating dynamic user experiences. 
               I have used Python and Pygame to architect a full 2D racing game from scratch, and I leverage modern web technologies like 
               Next.js, React, and Tailwind CSS to build performant, responsive web applications like this very portfolio. 
-              My drive to continuously improve means I'm always expanding my toolkit, currently deepening my knowledge of containerization with technologies like Docker and spring Boot for backend development.
+              My drive to continuously improve means I&apos;m always expanding my toolkit, currently deepening my knowledge of containerization with technologies like Docker and spring Boot for backend development.
               </p>
             </div>
             <div className="flex justify-center space-x-4">
@@ -277,7 +277,7 @@ const Portfolio = () => {
       <section id="contact" className="py-20 px-4 bg-gray-800/50">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-            Let's Work Together
+            Let&apos;s Work Together
           </h2>
           <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
             I'm always interested in new opportunities and exciting projects. 
