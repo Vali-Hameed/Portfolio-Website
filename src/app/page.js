@@ -75,9 +75,19 @@ const Portfolio = () => {
       <nav className="fixed top-0 w-full bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-              Vali Hameed
-            </div>
+      <a 
+        href="#home" 
+        onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}
+        className="flex items-center space-x-3"
+      >
+        {/* This nested structure creates the gradient border effect */}
+        <div className="w-9 h-9 rounded-full bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 p-0.5">
+          <div className="w-full h-full rounded-full bg-gray-900 flex items-center justify-center">
+            <span className="text-sm font-bold text-white">VH</span>
+          </div>
+        </div>
+        <span className="font-bold text-xl text-white hidden sm:block">Vali Hameed</span>
+      </a>
             
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-8">
