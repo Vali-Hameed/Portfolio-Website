@@ -50,7 +50,7 @@ const Portfolio = () => {
 
   const projects = [
     {
-      title: 'Tram Network Pathfinding',
+      title: 'Tram Network Pathfinding 🚊',
       description: 'Advanced Java application implementing Dijkstra\'s algorithm and custom pathfinding for optimal tram route calculation with GUI visualization and delay simulation.',
       tech: ['Java', 'Swing GUI', 'Dijkstra\'s Algorithm', 'Graph Theory', 'CSV Processing'],
       github: 'https://github.com/Vali-Hameed/Tram-Network-Pathfinding',
@@ -59,7 +59,7 @@ const Portfolio = () => {
       featured: true
     },
     {
-      title: 'Python Car Racing Game',
+      title: 'Python Car Racing Game 🏁',
       description: '2D racing game built with Pygame featuring multiple tracks, car selection, competitive mode with tire degradation, and local leaderboards.',
       tech: ['Python', 'Pygame', 'Game Development', 'OOP', 'File I/O'],
       github: 'https://github.com/Vali-Hameed/Python-Car-Game-NEA',
