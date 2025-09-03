@@ -5,6 +5,16 @@ import { Github, Linkedin, Mail, ExternalLink, Code, Database, Globe, Smartphone
 const Portfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
+  const [isHeroVisible, setIsHeroVisible] = useState(false);
+
+    useEffect(() => {
+    // This effect runs once when the component mounts
+    const timer = setTimeout(() => {
+      setIsHeroVisible(true);
+    }, 100); // A small delay to ensure the component is mounted before animating
+
+    return () => clearTimeout(timer); // Cleanup timer on unmount
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -116,7 +126,9 @@ const Portfolio = () => {
       <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-purple-900/20 to-pink-900/20"></div>
         <div className="relative z-10 text-center px-4">
-          <div className="mb-8">
+          
+          {/* Animated Initials Circle */}
+          <div className={`mb-8 transition-all duration-700 ease-out ${isHeroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
             <div className="w-48 h-48 mx-auto mb-8 rounded-full bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 p-1">
               <div className="w-full h-full rounded-full bg-gray-900 flex items-center justify-center">
                 <span className="text-6xl font-bold text-white">VH</span>
@@ -124,14 +136,18 @@ const Portfolio = () => {
             </div>
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+          {/* Animated Title */}
+          <h1 className={`text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent transition-all duration-700 ease-out delay-200 ${isHeroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
             Vali Hameed
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+          
+          {/* Animated Subtitle */}
+          <p className={`text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto transition-all duration-700 ease-out delay-300 ${isHeroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
             2nd Year Computer Science Student | Full Stack Developer | Aspiring Software Engineer
           </p>
           
-          <div className="flex justify-center space-x-6 mb-12">
+          {/* Animated Social Links */}
+          <div className={`flex justify-center space-x-6 mb-12 transition-all duration-700 ease-out delay-500 ${isHeroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
             <a href="mailto:valihameed88@gmail.com" className="p-3 bg-blue-600 hover:bg-blue-700 rounded-full transition-colors">
               <Mail size={24} />
             </a>
@@ -143,9 +159,10 @@ const Portfolio = () => {
             </a>
           </div>
 
+          {/* Animated Scroll Down Chevron */}
           <button
             onClick={() => scrollToSection('about')}
-            className="animate-bounce"
+            className={`animate-bounce transition-opacity duration-700 ease-out delay-700 ${isHeroVisible ? 'opacity-100' : 'opacity-0'}`}
           >
             <ChevronDown size={32} className="text-gray-400" />
           </button>
