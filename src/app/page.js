@@ -73,8 +73,8 @@ const Portfolio = () => {
     <div className="min-h-screen bg-gray-900 text-white">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
+        <div className=" px-6 sm:px-4 lg:px-26">
+          <div className="flex justify-between items-left py-4">
       <a 
         href="#home" 
         onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}
