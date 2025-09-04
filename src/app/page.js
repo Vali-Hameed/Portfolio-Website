@@ -1,11 +1,15 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import { Github, Linkedin, Mail, ExternalLink, Code, Database, Globe, Smartphone, ChevronDown, Menu, X } from 'lucide-react';
+import { Github, Linkedin, Mail, ExternalLink, Code, Database, Globe, Smartphone, ChevronDown, Menu, X,  PlayCircle, XCircle } from 'lucide-react';
+import MuxVideoPlayer from '../../components/MuxVideoPlayer.js';
+
+
 
 const Portfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
   const [isHeroVisible, setIsHeroVisible] = useState(false);
+  const [activeVideo, setActiveVideo] = useState(null);
 
     useEffect(() => {
     // This effect runs once when the component mounts
@@ -36,7 +40,9 @@ const Portfolio = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
+  const toggleVideoPlayer = (projectTitle) => {
+  setActiveVideo(activeVideo === projectTitle ? null : projectTitle);
+};
   const scrollToSection = (sectionId) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
     setIsMenuOpen(false);
@@ -54,7 +60,7 @@ const Portfolio = () => {
       description: 'Advanced Java application implementing Dijkstra\'s algorithm and custom pathfinding for optimal tram route calculation with GUI visualization and delay simulation.',
       tech: ['Java', 'Swing GUI', 'Dijkstra\'s Algorithm', 'Graph Theory', 'CSV Processing'],
       github: 'https://github.com/Vali-Hameed/Tram-Network-Pathfinding',
-      live: '#',
+      playbackId: 'eCEwI013J008ywsMna6jbJRCuRTor6uhrRNII6J0201ypVQ',
       image: 'bg-gradient-to-br from-emerald-500 to-teal-600',
       featured: true
     },
@@ -63,7 +69,7 @@ const Portfolio = () => {
       description: '2D racing game built with Pygame featuring multiple tracks, car selection, competitive mode with tire degradation, and local leaderboards.',
       tech: ['Python', 'Pygame', 'Game Development', 'OOP', 'File I/O'],
       github: 'https://github.com/Vali-Hameed/Python-Car-Game-NEA',
-      live: '#',
+      playbackId: 'wWW02Pk7AvIcbv9n4wbT01Z2m27gBFYI3KHjtZf02ngO58',
       image: 'bg-gradient-to-br from-red-500 to-orange-500'
     }
 
@@ -246,60 +252,95 @@ const Portfolio = () => {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20 px-4">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-            Featured Projects
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            {projects.map((project, index) => (
-              <div key={index} className={`bg-gray-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 ${project.featured ? 'md:col-span-2' : ''}`}>
-                <div className={`h-48 ${project.image} flex items-center justify-center relative`}>
-                  {project.featured && (
-                    <div className="absolute top-4 right-4 bg-yellow-500 text-black px-3 py-1 rounded-full text-sm font-semibold">
-                      Featured
-                    </div>
-                  )}
-                  <h3 className="text-2xl font-bold text-white">{project.title}</h3>
+<section id="projects" className="py-20 px-4">
+  <div className="max-w-7xl mx-auto">
+    <h2 className="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+      Featured Projects
+    </h2>
+    <div className="grid md:grid-cols-2 gap-8">
+      {projects.map((project, index) => (
+        <div
+          key={index}
+          className={`bg-gray-800 rounded-xl overflow-hidden transition-all duration-300 ${
+            project.featured ? 'md:col-span-2' : ''
+          }`}
+        >
+          {/* Video Player */}
+          {activeVideo === project.title && project.playbackId ? (
+            <div className="p-4">
+              <MuxVideoPlayer playbackId={project.playbackId} />
+            </div>
+          ) : (
+            <div
+              className={`h-48 ${project.image} flex items-center justify-center relative cursor-pointer`}
+              onClick={() =>
+                project.playbackId && toggleVideoPlayer(project.title)
+              }
+            >
+              {project.featured && (
+                <div className="absolute top-4 right-4 bg-yellow-500 text-black px-3 py-1 rounded-full text-sm font-semibold">
+                  Featured
                 </div>
-                <div className="p-6">
-                  <p className="text-gray-300 mb-4 leading-relaxed">{project.description}</p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.tech.map((tech) => (
-                      <span key={tech} className="bg-blue-600/20 text-blue-400 px-3 py-1 rounded-full text-sm">
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                  <div className="flex space-x-4">
-                    <a
-                      href={project.github}
-                      className="flex items-center text-gray-300 hover:text-blue-400 transition-colors"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Github size={20} className="mr-2" />
-                      Code
-                    </a>
-                    {project.live !== '#' && (
-                      <a
-                        href={project.live}
-                        className="flex items-center text-gray-300 hover:text-blue-400 transition-colors"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <ExternalLink size={20} className="mr-2" />
-                        Live Demo
-                      </a>
-                    )}
-                  </div>
-                </div>
-              </div>
-            ))}
+              )}
+              <h3 className="text-2xl font-bold text-white text-center">
+                {project.title}
+              </h3>
+              {project.playbackId && (
+                <PlayCircle className="absolute bottom-4 right-4 text-white" size={32} />
+              )}
+            </div>
+          )}
+
+          {/* Project Details */}
+          <div className="p-6">
+            <p className="text-gray-300 mb-4 leading-relaxed">
+              {project.description}
+            </p>
+            <div className="flex flex-wrap gap-2 mb-4">
+              {project.tech.map((tech) => (
+                <span
+                  key={tech}
+                  className="bg-blue-600/20 text-blue-400 px-3 py-1 rounded-full text-sm"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+            <div className="flex space-x-4">
+              <a
+                href={project.github}
+                className="flex items-center text-gray-300 hover:text-blue-400 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github size={20} className="mr-2" />
+                Code
+              </a>
+              {project.playbackId && activeVideo !== project.title && (
+                <button
+                  onClick={() => toggleVideoPlayer(project.title)}
+                  className="flex items-center text-gray-300 hover:text-blue-400 transition-colors"
+                >
+                  <PlayCircle size={20} className="mr-2" />
+                  Live Demo
+                </button>
+              )}
+              {activeVideo === project.title && (
+                <button
+                  onClick={() => toggleVideoPlayer(project.title)}
+                  className="flex items-center text-gray-300 hover:text-blue-400 transition-colors"
+                >
+                  <XCircle size={20} className="mr-2" />
+                  Close Demo
+                </button>
+              )}
+            </div>
           </div>
         </div>
-      </section>
-
+      ))}
+    </div>
+  </div>
+</section>
       {/* Contact Section */}
       <section id="contact" className="py-20 px-4 bg-gray-800/50">
         <div className="max-w-4xl mx-auto text-center">
