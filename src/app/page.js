@@ -197,7 +197,7 @@ const Portfolio = () => {
               <p className="text-lg text-gray-300 leading-relaxed mb-6">
                 I am a second-year Computer Science student at Lancaster University driven by a passion for building complete, end-to-end software solutions. 
                 My journey into development is rooted in a love for algorithmic problem-solving, which I&apos;ve applied using Java to build projects 
-                like a tram network pathfinding visualizer that implements Dijkstra&apos;s and A* algorithms.
+                like a tram network pathfinding visualizer that implements Dijkstra&apos;s algorithm.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed mb-8">
               I translate this logical foundation into creating dynamic user experiences. 
