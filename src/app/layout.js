@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { icons } from "lucide-react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,6 +15,11 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Vali Hameed - Portfolio",
   description: "Portfolio website of Vali Hameed, a Computer Science student at Lancaster University.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico" }
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {
