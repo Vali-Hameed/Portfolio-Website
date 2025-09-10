@@ -20,6 +20,9 @@ export const metadata = {
       { url: "/favicon.ico" }
     ],
   },
+  verification: {
+    google:process.env.GOOGLE_SITE_VERIFICATION,
+  },
 };
 
 export default function RootLayout({ children }) {
