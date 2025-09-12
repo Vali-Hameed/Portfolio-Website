@@ -2,7 +2,7 @@
 
 This is the source code for my personal portfolio website, live at www.vali-hameed.com. This project serves as a central hub for my work, showcasing my skills, projects, and professional experience in software development. It was built with a focus on performance, responsive design, and a clean user experience using a modern, industry-standard tech stack.
 
-## Features
+## ✨ Features
 * Fully Responsive Design: A mobile-first approach using Tailwind CSS ensures a seamless experience on all devices, from phones to desktops.
 
 * High Performance: Built with Next.js and leveraging Static Site Generation (SSG) for incredibly fast page loads and optimal performance.
@@ -15,7 +15,7 @@ This is the source code for my personal portfolio website, live at www.vali-hame
 
 * SEO Optimized: Clean, semantic HTML and Next.js's built-in optimizations ensure the site is easily discoverable by search engines.
 
-## Technical Stack
+## 🛠️ Technical Stack
 This project was built with a modern, full-stack JavaScript toolkit:
 
 * Framework: Next.js (with the App Router)
@@ -30,7 +30,7 @@ This project was built with a modern, full-stack JavaScript toolkit:
 
 * Deployment: Vercel
 
-## Getting Started
+## 🚀 Getting Started
 To run this project locally, follow these steps:
 
 1. Clone the repository:
@@ -48,5 +48,5 @@ npm run dev
 ```
 Open http://localhost:3000 in your browser to see the result.
 
-## License
+## 📜 License
 This project is licensed under the MIT License. See the LICENSE file for details.
