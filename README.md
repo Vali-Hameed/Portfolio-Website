@@ -1,5 +1,4 @@
 # Vali Hameed - Personal Portfolio Website
-Live site: www.vali-hameed.com
 
 This is the source code for my personal portfolio website, live at www.vali-hameed.com. This project serves as a central hub for my work, showcasing my skills, projects, and professional experience in software development. It was built with a focus on performance, responsive design, and a clean user experience using a modern, industry-standard tech stack.
 
