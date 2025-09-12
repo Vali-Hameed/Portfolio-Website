@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Vali Hameed - Personal Portfolio Website
+Live site: www.vali-hameed.com
+
+This is the source code for my personal portfolio website, live at www.vali-hameed.com. This project serves as a central hub for my work, showcasing my skills, projects, and professional experience in software development. It was built with a focus on performance, responsive design, and a clean user experience using a modern, industry-standard tech stack.
+
+## Features
+* Fully Responsive Design: A mobile-first approach using Tailwind CSS ensures a seamless experience on all devices, from phones to desktops.
+
+* High Performance: Built with Next.js and leveraging Static Site Generation (SSG) for incredibly fast page loads and optimal performance.
+
+* Dynamic Project Showcase: Features an interactive section for my projects, including inline video previews powered by Mux.
+
+* Smooth Scrolling & Animations: Subtle, performant animations and smooth-scrolling navigation provide a polished and modern user experience.
+
+* Interactive Contact Form: An integrated Formspree contact form allows for easy communication.
+
+* SEO Optimized: Clean, semantic HTML and Next.js's built-in optimizations ensure the site is easily discoverable by search engines.
+
+## Technical Stack
+This project was built with a modern, full-stack JavaScript toolkit:
+
+* Framework: Next.js (with the App Router)
+
+* UI Library: React
+
+* Styling: Tailwind CSS
+
+* Icons: Lucide React
+
+* Video Streaming: Mux Player for React
+
+* Deployment: Vercel
 
 ## Getting Started
+To run this project locally, follow these steps:
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+1. Clone the repository:
 ```
+git clone [https://github.com/Vali-Hameed/Portfolio-Website.git](https://github.com/Vali-Hameed/Portfolio-Website.git)
+cd Portfolio-Website
+```
+2. Install dependencies:
+```
+npm install
+```
+3. Run the development server:
+```
+npm run dev
+```
+Open http://localhost:3000 in your browser to see the result.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
