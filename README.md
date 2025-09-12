@@ -33,7 +33,7 @@ This project was built with a modern, full-stack JavaScript toolkit:
 ## 🚀 Getting Started
 To run this project locally, follow these steps:
 
-**1. **Clone the repository:**
+**1. Clone the repository:**
 ```
 git clone [https://github.com/Vali-Hameed/Portfolio-Website.git](https://github.com/Vali-Hameed/Portfolio-Website.git)
 cd Portfolio-Website
