@@ -61,7 +61,7 @@ const Portfolio = () => {
       tech: ['Python', 'AWS ECS', 'Docker', 'Scikit-learn', 'Pandas', 'FastAPI', 'Logistic Regression','REST API', 'Machine Learning','Predictive Modeling','Data Preprocessing'],
       github: 'https://github.com/Vali-Hameed/UFC-Fight-Predictor',
       featured: true,
-      image: 'bg-gradient-to-br from-red-500 to-red-700'
+      image: 'bg-gradient-to-br from-red-500 to-red-800'
     },
     {
       title: 'Tram Network Pathfinding 🚊',
@@ -277,7 +277,7 @@ const Portfolio = () => {
       {projects.map((project, index) => (
         <div
           key={index}
-          className={`bg-gray-800 rounded-xl overflow-hidden transition-all duration-300 ${
+          className={`bg-gray-800 rounded-xl overflow-hidden transition-transform duration-300 ease-in-out hover:scale-105 ${
             project.featured ? 'md:col-span-2' : ''
           }`}
         >
