@@ -50,11 +50,19 @@ const Portfolio = () => {
 
   const skills = [
     { category: 'Frontend', icon: Globe, items: ['React', 'Next.js', 'Java Swing', 'Tailwind CSS'] },
-    { category: 'Backend', icon: Database, items: ['Node.js', 'Python', 'PostgreSQL','Spring Boot','Java'] },
+    { category: 'Backend', icon: Database, items: ['Python', 'PostgreSQL','Spring Boot','Java','FastAPI'] },
     { category: 'Tools', icon: Code, items: ['Git', 'Docker', 'AWS', 'Azure'] }
   ];
 
   const projects = [
+    {
+      title: 'UFC Fight Predictor 🤼‍♂️🥊',
+      description: 'A machine learning application that uses a logistic regression model to predict UFC fight outcomes and serves the predictions through a containerized FastAPI application.',
+      tech: ['Python', 'AWS ECS', 'Docker', 'Scikit-learn', 'Pandas', 'FastAPI', 'Logistic Regression','REST API', 'Machine Learning','Predictive Modeling','Data Preprocessing'],
+      github: 'https://github.com/Vali-Hameed/UFC-Fight-Predictor',
+      featured: true,
+      image: 'bg-gradient-to-br from-red-500 to-red-700'
+    },
     {
       title: 'Tram Network Pathfinding 🚊',
       description: 'Advanced Java application implementing Dijkstra\'s algorithm and custom pathfinding for optimal tram route calculation with GUI visualization and delay simulation.',
@@ -62,7 +70,7 @@ const Portfolio = () => {
       github: 'https://github.com/Vali-Hameed/Tram-Network-Pathfinding',
       playbackId: 'eCEwI013J008ywsMna6jbJRCuRTor6uhrRNII6J0201ypVQ',
       image: 'bg-gradient-to-br from-emerald-500 to-teal-600',
-      featured: true
+      featured: false
     },
     {
       title: 'Python Car Racing Game 🏁',
@@ -195,15 +203,23 @@ const Portfolio = () => {
           <div className="flex flex-col justify-center items-center text-center">
             <div className="max-w-3xl">
               <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                I am a second-year Computer Science student at Lancaster University driven by a passion for building complete, end-to-end software solutions. 
-                My journey into development is rooted in a love for algorithmic problem-solving, which I&apos;ve applied using Java to build projects 
-                like a tram network pathfinding visualizer that implements Dijkstra&apos;s algorithm.
+              Hello! I'm a Computer Science student at Lancaster University, and I'm truly passionate about the entire journey of software development,
+               from the first spark of an idea to a fully deployed application. For me, the most exciting part of this field is the challenge of 
+               solving complex problems and turning those solutions into something tangible and useful.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed mb-8">
-              I translate this logical foundation into creating dynamic user experiences. 
-              I have used Python and Pygame to architect a full 2D racing game from scratch, and I leverage modern web technologies like 
-              Next.js, React, and Tailwind CSS to build performant, responsive web applications like this very portfolio. 
-              My drive to continuously improve means I&apos;m always expanding my toolkit, currently deepening my knowledge of containerization with technologies like Docker and spring Boot for backend development.
+          My professional experience at DigbySwift was a fantastic opportunity to dive into the world of mobile development. 
+          Working with Dart and Flutter, I got hands-on experience building a cross-platform app, which taught me the importance of writing clean, 
+          testable code and managing projects effectively using Git.
+              </p>
+              <p className="text-lg text-gray-300 leading-relaxed mb-8">
+       When I'm not studying, I love to use my skills to explore my personal interests. As a big UFC fan, I was curious if I could predict fight outcomes, 
+       which led me to build a machine learning model in Python. By cleaning and analyzing a dataset of over 6,000 fights, 
+       I was able to train a model that achieved a 66% accuracy rate. I've also enjoyed bringing classic algorithms to life by creating a 
+       pathfinding visualizer in Java that can find the shortest route through a tram network using Dijkstra's algorithm.
+              </p>
+              <p className="text-lg text-gray-300 leading-relaxed mb-8">
+     I'm always looking for new challenges and ways to grow as a developer. I'm excited by the prospect of bringing my mix of academic knowledge and practical, hands-on experience to a new and challenging software engineering role.
               </p>
             </div>
             <div className="flex justify-center space-x-4">
