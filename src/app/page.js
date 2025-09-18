@@ -203,7 +203,7 @@ const Portfolio = () => {
           <div className="flex flex-col justify-center items-center text-center">
             <div className="max-w-3xl">
               <p className="text-lg text-gray-300 leading-relaxed mb-6">
-              Hello! I'm a Computer Science student at Lancaster University, and I'm truly passionate about the entire journey of software development,
+              Hello! I am a Computer Science student at Lancaster University, and I am truly passionate about the entire journey of software development,
                from the first spark of an idea to a fully deployed application. For me, the most exciting part of this field is the challenge of 
                solving complex problems and turning those solutions into something tangible and useful.
               </p>
@@ -213,13 +213,13 @@ const Portfolio = () => {
           testable code and managing projects effectively using Git.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed mb-8">
-       When I'm not studying, I love to use my skills to explore my personal interests. As a big UFC fan, I was curious if I could predict fight outcomes, 
+       When I&apos;m not studying, I love to use my skills to explore my personal interests. As a big UFC fan, I was curious if I could predict fight outcomes, 
        which led me to build a machine learning model in Python. By cleaning and analyzing a dataset of over 6,000 fights, 
-       I was able to train a model that achieved a 66% accuracy rate. I've also enjoyed bringing classic algorithms to life by creating a 
-       pathfinding visualizer in Java that can find the shortest route through a tram network using Dijkstra's algorithm.
+       I was able to train a model that achieved a 66% accuracy rate. I&apos;ve also enjoyed bringing classic algorithms to life by creating a 
+       pathfinding visualizer in Java that can find the shortest route through a tram network using Dijkstra&apos;s algorithm.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed mb-8">
-     I'm always looking for new challenges and ways to grow as a developer. I'm excited by the prospect of bringing my mix of academic knowledge and practical, hands-on experience to a new and challenging software engineering role.
+     I am always looking for new challenges and ways to grow as a developer. I am excited by the prospect of bringing my mix of academic knowledge and practical, hands-on experience to a new and challenging software engineering role.
               </p>
             </div>
             <div className="flex justify-center space-x-4">
