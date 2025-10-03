@@ -61,6 +61,7 @@ const Portfolio = () => {
       tech: ['Python', 'AWS ECS', 'Docker', 'Scikit-learn', 'Pandas', 'FastAPI', 'Logistic Regression','REST API', 'Machine Learning','Predictive Modeling','Data Preprocessing'],
       github: 'https://github.com/Vali-Hameed/UFC-Fight-Predictor',
       featured: true,
+      playbackId: 'QdgqNix7IbZdefjDBcnx4hzmJ102tyzN4NkDE6ZwyHwI',
       image: 'bg-gradient-to-br from-red-500 to-red-800'
     },
     {
