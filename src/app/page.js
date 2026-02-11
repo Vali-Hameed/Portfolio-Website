@@ -49,8 +49,8 @@ const Portfolio = () => {
   };
 
   const skills = [
-    { category: 'Frontend', icon: Globe, items: ['React', 'Next.js', 'Java Swing', 'Tailwind CSS'] },
-    { category: 'Backend', icon: Database, items: ['Python', 'PostgreSQL','Spring Boot','Java','FastAPI'] },
+    { category: 'Frontend', icon: Globe, items: ['React', 'Next.js', 'Java Swing', 'Tailwind CSS','TypeScript'] },
+    { category: 'Backend', icon: Database, items: ['Python', 'PostgreSQL','Spring Boot','Java','FastAPI','Django','MongoDB'] },
     { category: 'Tools', icon: Code, items: ['Git', 'Docker', 'AWS', 'Azure'] }
   ];
 
@@ -213,20 +213,19 @@ const Portfolio = () => {
           <div className="flex flex-col justify-center items-center text-center">
             <div className="max-w-3xl">
               <p className="text-lg text-gray-300 leading-relaxed mb-6">
-              Hello! I am a Computer Science student at Lancaster University, and I am truly passionate about the entire journey of software development,
-               from the first spark of an idea to a fully deployed application. For me, the most exciting part of this field is the challenge of 
-               solving complex problems and turning those solutions into something tangible and useful.
+                Hello! I am a Computer Science student at Lancaster University, expecting a First Class Honours degree. 
+                I am truly passionate about the entire journey of software development, from the first spark of an idea to a fully deployed application. 
+                For me, the most exciting part of this field is the challenge of solving complex problems and turning those solutions into tangible, scalable products that deliver real user value.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed mb-8">
-          My professional experience at DigbySwift was a fantastic opportunity to dive into the world of mobile development. 
-          Working with Dart and Flutter, I got hands-on experience building a cross-platform app, which taught me the importance of writing clean, 
-          testable code and managing projects effectively using Git.
+                My professional experience is defined by a mix of entrepreneurial leadership and hands-on engineering. 
+                Currently, I am the Co-Founder and Full-Stack Developer at Picky Eater, where I lead the development of a web application using Django, React, and PostgreSQL, while also managing the product roadmap and CI/CD pipelines. 
+                Previously, I worked as a Software Developer at DigbySwift, where I gained experience in mobile development with Dart and Flutter, building a cross-platform app that reduced search times by 25%.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed mb-8">
-       When I&apos;m not studying, I love to use my skills to explore my personal interests. As a big UFC fan, I was curious if I could predict fight outcomes, 
-       which led me to build a machine learning model in Python. By cleaning and analyzing a dataset of over 6,000 fights, 
-       I was able to train a model that achieved a 66% accuracy rate. I&apos;ve also enjoyed bringing classic algorithms to life by creating a 
-       pathfinding visualizer in Java that can find the shortest route through a tram network using Dijkstra&apos;s algorithm.
+                When I'm not studying or working on my startup, I love to use my skills to explore personal interests. 
+                As a big UFC fan, I challenged myself to build a "UFC Fight Predictor," creating a secure RESTful API with Java Spring Boot and a Python Machine Learning model that achieved a 66% accuracy rate on fight outcomes. 
+                I also enjoy visualizing classic algorithms, such as my Tram Network project which uses Dijkstra's algorithm to find shortest paths. I am always looking for new challenges that allow me to bring my mix of academic knowledge and practical full-stack experience to a dynamic team.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed mb-8">
      I am always looking for new challenges and ways to grow as a developer. I am excited by the prospect of bringing my mix of academic knowledge and practical, hands-on experience to a new and challenging software engineering role.
