@@ -223,9 +223,9 @@ const Portfolio = () => {
                 Previously, I worked as a Software Developer at DigbySwift, where I gained experience in mobile development with Dart and Flutter, building a cross-platform app that reduced search times by 25%.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed mb-8">
-                When I'm not studying or working on my startup, I love to use my skills to explore personal interests. 
-                As a big UFC fan, I challenged myself to build a "UFC Fight Predictor," creating a secure RESTful API with Java Spring Boot and a Python Machine Learning model that achieved a 66% accuracy rate on fight outcomes. 
-                I also enjoy visualizing classic algorithms, such as my Tram Network project which uses Dijkstra's algorithm to find shortest paths. I am always looking for new challenges that allow me to bring my mix of academic knowledge and practical full-stack experience to a dynamic team.
+                When I&apos;m not studying or working on my startup, I love to use my skills to explore personal interests. 
+                As a big UFC fan, I challenged myself to build a UFC Fight Predictor, creating a secure RESTful API with Java Spring Boot and a Python Machine Learning model that achieved a 66% accuracy rate on fight outcomes. 
+                I also enjoy visualizing classic algorithms, such as my Tram Network project which uses Dijkstra&apos;s algorithm to find shortest paths. I am always looking for new challenges that allow me to bring my mix of academic knowledge and practical full-stack experience to a dynamic team.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed mb-8">
      I am always looking for new challenges and ways to grow as a developer. I am excited by the prospect of bringing my mix of academic knowledge and practical, hands-on experience to a new and challenging software engineering role.
