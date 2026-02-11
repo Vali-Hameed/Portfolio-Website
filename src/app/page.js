@@ -56,6 +56,15 @@ const Portfolio = () => {
 
   const projects = [
     {
+      title: 'Orbital Risk 🚀',
+      description: 'A 3D launch-window optimisation system combining debris exposure modelling and machine-learned weather risk. Won runner up 🥈 at Leeds Hack 2026 Parallax challenge.',
+      tech: ['Python', 'Next.js', 'TypeScript', 'React', 'Scikit-Learn', 'FastAPI','Machine Learning', 'Pandas' ],
+      github: 'https://github.com/akaltemamey/leedshack2026-prototype',
+      featured: true,
+      playbackId: 'H01zheI02jcSjaNxqBWvcMFzshysbc4IOx029i5UEjDBaM',
+      image: 'bg-gradient-to-br from-purple-500 to-black500'
+    },
+    {
       title: 'UFC Fight Predictor 🤼‍♂️🥊',
       description: 'A machine learning application that uses a logistic regression model to predict UFC fight outcomes and serves the predictions through a containerized FastAPI application.',
       tech: ['Python', 'AWS ECS', 'Docker', 'Scikit-learn', 'Pandas', 'FastAPI', 'Logistic Regression','REST API', 'Machine Learning','Predictive Modeling','Data Preprocessing'],
