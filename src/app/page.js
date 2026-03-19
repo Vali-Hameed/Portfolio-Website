@@ -78,7 +78,7 @@ const Portfolio = () => {
   const projects = [
     {
       title: "Orbital Risk 🚀",
-      description: "A 3D launch-window optimisation system combining debris exposure modelling and machine-learned weather risk. Won runner up ?? at Leeds Hack 2026 Parallax challenge.",
+      description: "A 3D launch-window optimisation system combining debris exposure modelling and machine-learned weather risk. Won runner up 🥈 at Leeds Hack 2026 Parallax challenge.",
       tech: ["Python", "Next.js", "TypeScript", "React", "Scikit-Learn", "FastAPI", "Machine Learning", "Pandas"],
       github: "https://github.com/akaltemamey/leedshack2026-prototype",
       featured: true,
@@ -92,7 +92,7 @@ const Portfolio = () => {
       github: "https://github.com/Vali-Hameed/UFC-Fight-Predictor",
       featured: true,
       playbackId: "QdgqNix7IbZdefjDBcnx4hzmJ102tyzN4NkDE6ZwyHwI",
-      image: "bg-gradient-to-br from-[#1e0b2b] to-purple-900 border border-purple-800/50"
+      image: "bg-gradient-to-br from-purple-800 to-indigo-950"
     },
     {
       title: "Tram Network Pathfinding 🚋",
@@ -100,7 +100,7 @@ const Portfolio = () => {
       tech: ["Java", "Swing GUI", "Dijkstra's Algorithm", "Graph Theory", "CSV Processing"],
       github: "https://github.com/Vali-Hameed/Tram-Network-Pathfinding",
       playbackId: "eCEwI013J008ywsMna6jbJRCuRTor6uhrRNII6J0201ypVQ",
-      image: "bg-gray-800",
+      image: "bg-gradient-to-br from-[#1e0b2b] to-purple-900 border border-purple-800/50",
       featured: false
     },
     {
@@ -109,7 +109,7 @@ const Portfolio = () => {
       tech: ["Python", "Pygame", "Game Development", "OOP", "File I/O"],
       github: "https://github.com/Vali-Hameed/Python-Car-Game-NEA",
       playbackId: "wWW02Pk7AvIcbv9n4wbT01Z2m27gBFYI3KHjtZf02ngO58",
-      image: "bg-gray-800"
+      image: "bg-gradient-to-br from-[#1e0b2b] to-purple-900 border border-purple-800/50"
     }
   ];
 
@@ -368,7 +368,7 @@ const Portfolio = () => {
                     
                     <div className={`${project.featured ? "md:w-1/2" : "w-full"} p-8 flex flex-col justify-between`}>
                       <div>
-                        {(!project.featured) && <h3 className="text-2xl font-black text-white uppercase tracking-widest mb-4">{project.title}</h3>}
+                        {(!project.featured) && <h3 className="text-2xl font-black text-white uppercase tracking-widest mb-4">{}</h3>}
                         <p className="text-slate-400 leading-relaxed font-light mb-6">
                           {project.description}
                         </p>
@@ -382,10 +382,12 @@ const Portfolio = () => {
                       </div>
                       
                       <div className="flex flex-wrap gap-4 auto-mt">
-                        <Button asChild variant="default" className="bg-white hover:bg-slate-200 text-black rounded-none uppercase tracking-wider font-bold h-12 px-6">
-                          <a href={project.github} target="_blank" rel="noopener noreferrer">
-                            <Github className="mr-2 h-4 w-4" /> Code
-                          </a>
+                        <Button 
+                          onClick={() => window.open(project.github, "_blank", "noopener,noreferrer")}
+                          variant="default" 
+                          className="bg-white hover:bg-slate-200 text-black rounded-none uppercase tracking-wider font-bold h-12 px-6"
+                        >
+                          <Github className="mr-2 h-4 w-4" /> Code
                         </Button>
                         
                         {project.playbackId && activeVideo !== project.title && (
@@ -494,7 +496,7 @@ const Portfolio = () => {
             <span className="text-xs font-black tracking-tighter text-purple-400 -rotate-45">VH</span>
           </div>
           <p className="text-slate-500 text-sm uppercase tracking-widest font-bold">
-            � {new Date().getFullYear()} Vali Hameed
+            © {new Date().getFullYear()} Vali Hameed
           </p>
           <p className="text-slate-600 mt-2 text-xs uppercase tracking-widest">
             Built with Next.js, Shadcn UI & Grit.
