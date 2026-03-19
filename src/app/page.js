@@ -65,8 +65,21 @@ const Portfolio = () => {
   };
 
   const scrollToSection = (sectionId) => {
-    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
-    setIsMenuOpen(false);
+    setIsMenuOpen(false); // Close the menu immediately
+    
+    setTimeout(() => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        const headerOffset = 80; // Offset for the fixed header
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+  
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+      }
+    }, 100);
   };
 
   const skills = [
@@ -228,10 +241,20 @@ const Portfolio = () => {
               </div>
             </div>
           </motion.div>
-        </section>
+            
+            {/* Scroll Down Chevron */}
+            <motion.button
+              onClick={() => scrollToSection('about')}
+              initial={{ opacity: 0 }}
+              animate={isHeroVisible ? { opacity: 1 } : {}}
+              transition={{ duration: 0.8, delay: 1 }}
+              className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-purple-400 hover:text-purple-300 transition-colors cursor-pointer z-20"
+            >
+              <ChevronDown size={40} />
+            </motion.button>
+          </section>
 
-
-        {/* About Section */}
+          {/* About Section */}
         <section id="about" className="py-24 px-4 relative">
           <div className="max-w-4xl mx-auto">
             <div className="mb-16">
