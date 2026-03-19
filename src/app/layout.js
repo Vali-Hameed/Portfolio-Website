@@ -16,9 +16,7 @@ export const metadata = {
   title: "Vali Hameed - Portfolio",
   description: "Portfolio website of Vali Hameed, a Computer Science student at Lancaster University.",
   icons: {
-    icon: [
-      { url: "/favicon.ico" }
-    ],
+    icon: "/icon.svg",
   },
   verification: {
     google:process.env.GOOGLE_SITE_VERIFICATION,
