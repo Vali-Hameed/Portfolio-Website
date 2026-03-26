@@ -83,7 +83,7 @@ const Portfolio = () => {
   };
 
   const skills = [
-    { category: "Frontend", icon: Globe, items: ["React", "Next.js", "Java Swing", "Tailwind CSS", "TypeScript","Shadcn UI"] },
+    { category: "Frontend", icon: Globe, items: ["React", "Next.js", "Java Swing", "Tailwind CSS", "TypeScript","Shadcn UI","React Native"] },
     { category: "Backend", icon: Database, items: ["Python", "Spring Boot", "Java", "FastAPI", "Django", "Haskell", "Node.js", "Flask"] },
     { category: "Tools & Infrastructure", icon: Code, items: ["Git", "Docker", "AWS", "Azure", "MongoDB", "PostgreSQL", "MySQL"] }
   ];
