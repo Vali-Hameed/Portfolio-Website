@@ -280,8 +280,8 @@ const Portfolio = () => {
                 </p>
                 <p>
                   My professional experience is defined by a mix of entrepreneurial leadership and hands-on engineering. 
-                  Currently, I am the Co-Founder and Full-Stack Developer at <strong className="text-purple-300 font-semibold">Picky Eater</strong>, where I lead the development of a web application using Django, React, and PostgreSQL, while also managing the product roadmap and CI/CD pipelines. 
-                  Previously, I worked as a Software Developer at <strong className="text-purple-300 font-semibold">DigbySwift</strong>, where I gained experience in mobile development with Dart and Flutter, building a cross-platform app that reduced search times by 25%.
+                  Currently, I am the Co-Founder and Full-Stack Developer at <a href="https://www.linkedin.com/company/picky-eater/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className="text-purple-300 hover:underline font-semibold">Picky Eater</a>, where I lead the development of a web application using Django, React, and PostgreSQL, while also managing the product roadmap and CI/CD pipelines. 
+                  Previously, I worked as a Software Developer at <a href="https://www.digbyswift.com/" target="_blank" rel="noopener noreferrer" className="text-purple-300 hover:underline font-semibold">DigbySwift</a>, where I gained experience in mobile development with Dart and Flutter, building a cross-platform app that reduced search times by 25%.
                 </p>
                 <p>
                   When I&apos;m not studying or working on my startup, I love to use my skills to explore personal interests. 
