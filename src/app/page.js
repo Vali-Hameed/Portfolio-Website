@@ -96,7 +96,8 @@ const Portfolio = () => {
       github: "https://github.com/akaltemamey/leedshack2026-prototype",
       featured: true,
       playbackId: "H01zheI02jcSjaNxqBWvcMFzshysbc4IOx029i5UEjDBaM",
-      image: "bg-gradient-to-br from-purple-800 to-indigo-950"
+      image: "bg-gradient-to-br from-purple-800 to-indigo-950",
+      link: "https://leedshack2026-prototype.vercel.app/"
     },
     {
       title: "UFC Fight Predictor 🤼‍♂️🥊 ",
@@ -394,6 +395,17 @@ const Portfolio = () => {
                         {(!project.featured) && <h3 className="text-2xl font-black text-white uppercase tracking-widest mb-4">{}</h3>}
                         <p className="text-slate-400 leading-relaxed font-light mb-6">
                           {project.description}
+                          {project.link && (
+                            <a 
+                              href={project.link} 
+                              target="_blank"           /* Opens in a new tab */
+                              rel="noopener noreferrer"  /* Security best practice */
+                              className="text-purple-400 hover:text-purple-600 font-semibold ml-1"
+                            >
+                              Try it out!
+                            </a>
+                          )}
+                          
                         </p>
                         <div className="flex flex-wrap gap-2 mb-8">
                           {project.tech.map((tech) => (
