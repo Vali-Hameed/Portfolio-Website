@@ -218,7 +218,7 @@ const Portfolio = () => {
             </h1>
             
             <p className="text-lg md:text-2xl text-slate-400 font-light mb-10 max-w-2xl mx-auto">
-              2nd Year Computer Science Student | Full Stack Developer | Aspiring Software Engineer
+              2nd Year Computer Science Student | Software Engineer | Entrepreneur | Full-Stack Developer | MMA Enthusiast 
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
@@ -280,14 +280,18 @@ const Portfolio = () => {
                 </p>
                 <p>
                   My professional experience is defined by a mix of entrepreneurial leadership and hands-on engineering. 
-                  Currently, I am the Co-Founder and Full-Stack Developer at <a href="https://www.linkedin.com/company/picky-eater/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className="text-purple-300 hover:underline font-semibold">Picky Eater</a>, where I lead the development of a web application using Django, React, and PostgreSQL, while also managing the product roadmap and CI/CD pipelines. 
-                  Previously, I worked as a Software Developer at <a href="https://www.digbyswift.com/" target="_blank" rel="noopener noreferrer" className="text-purple-300 hover:underline font-semibold">DigbySwift</a>, where I gained experience in mobile development with Dart and Flutter, building a cross-platform app that reduced search times by 25%.
+                  Currently, I am the Co-Founder and Lead Engineer at <a href="https://www.linkedin.com/company/picky-eater/" target="_blank" rel="noopener noreferrer" className="text-purple-300 hover:underline font-semibold">Picky Eater</a>, where I lead the development of a web application using Django, React, and PostgreSQL, while also managing the product roadmap and CI/CD pipelines. 
+                  Previously, I worked as a Software Developer at <a href="https://www.digbyswift.com/" target="_blank" rel="noopener noreferrer" className="text-purple-300 hover:underline font-semibold">DigbySwift</a>, where I gained experience in mobile development with Dart and Flutter.
                 </p>
                 <p>
                   When I&apos;m not studying or working on my startup, I love to use my skills to explore personal interests. 
                   As a big MMA fan (Muay Thai & Kickboxing enthusiast), I challenged myself to build a UFC Fight Predictor, creating a secure RESTful API with Java Spring Boot and a Python ML model tracking a 66% accuracy rate on fight outcomes. 
-                  I am always looking for new challenges that allow me to bring my mix of academic knowledge and practical full-stack experience to a dynamic team.
                 </p>
+                <p>
+                  I am always eager to connect with like-minded individuals, whether it&apos;s for collaboration, mentorship, or just to chat about the latest in tech and MMA. 
+                  Feel free to reach out if you want to discuss potential opportunities or just want to say hi!
+                </p>                 
+
               </div>
               
               <div className="mt-12 flex flex-wrap gap-4 relative z-10">
