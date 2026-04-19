@@ -366,7 +366,7 @@ const Portfolio = () => {
                   <div className="flex flex-col md:flex-row h-full">
                     <div className={`${project.featured ? "md:w-1/2" : "w-full"} relative`}>
                       {activeVideo === project.title && project.playbackId ? (
-                        <div className="h-full min-h-[300px] w-full bg-black">
+                        <div className="w-full aspect-video md:aspect-auto md:h-full bg-black">
                           <MuxVideoPlayer playbackId={project.playbackId} />
                         </div>
                       ) : (
