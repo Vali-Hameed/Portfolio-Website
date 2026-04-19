@@ -280,8 +280,8 @@ const Portfolio = () => {
                 </p>
                 <p>
                   My professional experience is defined by a mix of entrepreneurial leadership and hands-on engineering. 
-                  Currently, I am the Co-Founder and Lead Engineer at <a href="https://www.linkedin.com/company/picky-eater/" target="_blank" rel="noopener noreferrer" className="text-purple-300 hover:underline font-semibold">Picky Eater</a>, where I lead the development of a web application using Django, React, and PostgreSQL, while also managing the product roadmap and CI/CD pipelines. 
-                  Previously, I worked as a Software Developer at <a href="https://www.digbyswift.com/" target="_blank" rel="noopener noreferrer" className="text-purple-300 hover:underline font-semibold">DigbySwift</a>, where I gained experience in mobile development with Dart and Flutter.
+                  Currently, I am the Co-Founder and Lead Engineer at <a href="https://www.linkedin.com/company/picky-eater/" target="_blank" rel="noopener noreferrer" className="text-purple-300 hover:underline font-semibold">Picky Eater</a>, where I lead the development of a web and mobile application using Django, React, and React Native, while also managing the product roadmap and CI/CD pipelines. 
+                  Previously, I worked as a Software Engineering Intern at <a href="https://www.digbyswift.com/" target="_blank" rel="noopener noreferrer" className="text-purple-300 hover:underline font-semibold">DigbySwift</a>, where I gained experience in mobile development with Dart and Flutter.
                 </p>
                 <p>
                   When I&apos;m not studying or working on my startup, I love to use my skills to explore personal interests. 
