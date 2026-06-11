@@ -66,14 +66,14 @@ const Portfolio = () => {
 
   const scrollToSection = (sectionId) => {
     setIsMenuOpen(false); // Close the menu immediately
-    
+
     setTimeout(() => {
       const element = document.getElementById(sectionId);
       if (element) {
         const headerOffset = 80; // Offset for the fixed header
         const elementPosition = element.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-  
+
         window.scrollTo({
           top: offsetPosition,
           behavior: "smooth"
@@ -83,7 +83,7 @@ const Portfolio = () => {
   };
 
   const skills = [
-    { category: "Frontend", icon: Globe, items: ["React", "Next.js", "Java Swing", "Tailwind CSS", "TypeScript","Shadcn UI","React Native"] },
+    { category: "Frontend", icon: Globe, items: ["React", "Next.js", "Java Swing", "Tailwind CSS", "TypeScript", "Shadcn UI", "React Native"] },
     { category: "Backend", icon: Database, items: ["Python", "Spring Boot", "Java", "FastAPI", "Django", "Haskell", "Node.js", "Flask"] },
     { category: "Tools & Infrastructure", icon: Code, items: ["Git", "Docker", "AWS", "Azure", "MongoDB", "PostgreSQL", "MySQL"] }
   ];
@@ -105,7 +105,7 @@ const Portfolio = () => {
       tech: ["Python", "AWS ECS", "Docker", "Scikit-learn", "Pandas", "FastAPI", "Logistic Regression", "REST API", "Machine Learning", "Predictive Modeling", "Data Preprocessing"],
       github: "https://github.com/Vali-Hameed/UFC-Fight-Predictor",
       featured: true,
-      playbackId: "QdgqNix7IbZdefjDBcnx4hzmJ102tyzN4NkDE6ZwyHwI",
+      playbackId: "01500v4x01zg75C02qtqZXtLqJwG4SeUdw2sbS00XqHRO8q00",
       image: "bg-gradient-to-br from-purple-800 to-indigo-950"
     },
     {
@@ -129,7 +129,7 @@ const Portfolio = () => {
 
   return (
     <div className="min-h-screen bg-[#06000c] text-slate-200 selection:bg-purple-500/30">
-      
+
       {/* Background Graphic - Thai rope pattern / Matrix feel */}
       <div className="fixed inset-0 z-0 pointer-events-none opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, #c084fc 1px, transparent 0)', backgroundSize: '40px 40px' }} />
 
@@ -137,8 +137,8 @@ const Portfolio = () => {
       <nav className="fixed top-0 w-full bg-[#06000c]/80 backdrop-blur-md z-50 border-b border-purple-900/40">
         <div className="px-6 sm:px-4 lg:px-26">
           <div className="flex justify-between items-center py-4">
-            <a 
-              href="#home" 
+            <a
+              href="#home"
               onClick={(e) => { e.preventDefault(); scrollToSection("home"); }}
               className="flex items-center space-x-3 group"
             >
@@ -149,15 +149,14 @@ const Portfolio = () => {
                 Vali Hameed
               </span>
             </a>
-            
+
             <div className="hidden md:flex space-x-8">
               {["Home", "About", "Skills", "Projects", "Contact"].map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
-                  className={`text-sm uppercase tracking-wider font-semibold hover:text-purple-400 transition-colors ${
-                    activeSection === item.toLowerCase() ? "text-purple-400 border-b-2 border-purple-500" : "text-slate-400"
-                  }`}
+                  className={`text-sm uppercase tracking-wider font-semibold hover:text-purple-400 transition-colors ${activeSection === item.toLowerCase() ? "text-purple-400 border-b-2 border-purple-500" : "text-slate-400"
+                    }`}
                 >
                   {item}
                 </button>
@@ -175,7 +174,7 @@ const Portfolio = () => {
 
         <AnimatePresence>
           {isMenuOpen && (
-            <motion.div 
+            <motion.div
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: "auto", opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
@@ -201,8 +200,8 @@ const Portfolio = () => {
         {/* Hero Section */}
         <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden px-4 pt-16">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-purple-900/20 blur-[120px] rounded-full point-events-none" />
-          
-          <motion.div 
+
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={isHeroVisible ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8 }}
@@ -212,19 +211,19 @@ const Portfolio = () => {
               <Activity size={16} />
               <span>Discipline in Code. Precision in Delivery.</span>
             </div>
-            
+
             <h1 className="text-6xl md:text-8xl font-black mb-6 tracking-tighter text-white">
               VALI <span className="text-transparent bg-clip-text bg-gradient-to-br from-purple-400 to-indigo-600">HAMEED</span>
             </h1>
-            
+
             <p className="text-lg md:text-2xl text-slate-400 font-light mb-10 max-w-2xl mx-auto">
-              2nd Year Computer Science Student | Software Engineer | Entrepreneur | Full-Stack Developer | MMA Enthusiast 
+              2nd Year Computer Science Student | Software Engineer | Entrepreneur | Full-Stack Developer | MMA Enthusiast
             </p>
-            
+
             <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
-              <Button 
-                onClick={() => scrollToSection('projects')} 
-                size="lg" 
+              <Button
+                onClick={() => scrollToSection('projects')}
+                size="lg"
                 className="bg-purple-600 hover:bg-purple-700 text-white rounded-none border border-purple-500 uppercase tracking-widest font-bold w-full sm:w-auto px-8 py-6 h-auto"
               >
                 View My Work
@@ -242,20 +241,20 @@ const Portfolio = () => {
               </div>
             </div>
           </motion.div>
-            
-            {/* Scroll Down Chevron */}
-            <motion.button
-              onClick={() => scrollToSection('about')}
-              initial={{ opacity: 0 }}
-              animate={isHeroVisible ? { opacity: 1 } : {}}
-              transition={{ duration: 0.8, delay: 1 }}
-              className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-purple-400 hover:text-purple-300 transition-colors cursor-pointer z-20"
-            >
-              <ChevronDown size={40} />
-            </motion.button>
-          </section>
 
-          {/* About Section */}
+          {/* Scroll Down Chevron */}
+          <motion.button
+            onClick={() => scrollToSection('about')}
+            initial={{ opacity: 0 }}
+            animate={isHeroVisible ? { opacity: 1 } : {}}
+            transition={{ duration: 0.8, delay: 1 }}
+            className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-purple-400 hover:text-purple-300 transition-colors cursor-pointer z-20"
+          >
+            <ChevronDown size={40} />
+          </motion.button>
+        </section>
+
+        {/* About Section */}
         <section id="about" className="py-24 px-4 relative">
           <div className="max-w-4xl mx-auto">
             <div className="mb-16">
@@ -263,45 +262,45 @@ const Portfolio = () => {
               <div className="h-1 w-20 bg-purple-600 mb-6" />
               <h3 className="text-4xl md:text-5xl font-black text-white">About Me</h3>
             </div>
-            
+
             <div className="bg-[#0A0512] border border-purple-900/30 p-8 md:p-12 relative overflow-hidden">
               <div className="absolute top-0 right-0 p-8 opacity-[0.05] pointer-events-none">
                 <svg className="w-64 h-64" viewBox="0 0 24 24" fill="currentColor">
                   {/* Subtle martial arts touch/ abstract shape */}
-                  <path d="M12 2L2 22h20L12 2zm0 4.5l6.5 13.5h-13L12 6.5z"/>
+                  <path d="M12 2L2 22h20L12 2zm0 4.5l6.5 13.5h-13L12 6.5z" />
                 </svg>
               </div>
-              
+
               <div className="space-y-6 text-slate-300 text-lg relative z-10 leading-relaxed font-light">
                 <p>
-                  Hello! I am a Computer Science student at Lancaster University, expecting a First Class Honours degree. 
-                  I am truly passionate about the entire journey of software development, from the first spark of an idea to a fully deployed application. 
+                  Hello! I am a Computer Science student at Lancaster University, expecting a First Class Honours degree.
+                  I am truly passionate about the entire journey of software development, from the first spark of an idea to a fully deployed application.
                   For me, the most exciting part of this field is the challenge of solving complex problems and turning those solutions into tangible, scalable products that deliver real user value.
                 </p>
                 <p>
-                  My professional experience is defined by a mix of entrepreneurial leadership and hands-on engineering. 
-                  Currently, I am the Co-Founder and Lead Engineer at <a href="https://www.linkedin.com/company/picky-eater/" target="_blank" rel="noopener noreferrer" className="text-purple-300 hover:underline font-semibold">Picky Eater</a>, where I lead the development of a web and mobile application using Django, React, and React Native, while also managing the product roadmap and CI/CD pipelines. 
+                  My professional experience is defined by a mix of entrepreneurial leadership and hands-on engineering.
+                  Currently, I am the Co-Founder and Lead Engineer at <a href="https://www.linkedin.com/company/picky-eater/" target="_blank" rel="noopener noreferrer" className="text-purple-300 hover:underline font-semibold">Picky Eater</a>, where I lead the development of a web and mobile application using Django, React, and React Native, while also managing the product roadmap and CI/CD pipelines.
                   Previously, I worked as a Software Engineering Intern at <a href="https://www.digbyswift.com/" target="_blank" rel="noopener noreferrer" className="text-purple-300 hover:underline font-semibold">DigbySwift</a>, where I gained experience in mobile development with Dart and Flutter.
                 </p>
                 <p>
-                  When I&apos;m not studying or working on my startup, I love to use my skills to explore personal interests. 
-                  As a big MMA fan (Muay Thai & Kickboxing enthusiast), I challenged myself to build a UFC Fight Predictor, creating a secure RESTful API with Java Spring Boot and a Python ML model tracking a 66% accuracy rate on fight outcomes. 
+                  When I&apos;m not studying or working on my startup, I love to use my skills to explore personal interests.
+                  As a big MMA fan (Muay Thai & Kickboxing enthusiast), I challenged myself to build a UFC Fight Predictor, creating a secure RESTful API with Java Spring Boot and a Python ML model tracking a 66% accuracy rate on fight outcomes.
                 </p>
                 <p>
-                  I am always eager to connect with like-minded individuals, whether it&apos;s for collaboration, mentorship, or just to chat about the latest in tech and MMA. 
+                  I am always eager to connect with like-minded individuals, whether it&apos;s for collaboration, mentorship, or just to chat about the latest in tech and MMA.
                   Feel free to reach out if you want to discuss potential opportunities or just want to say hi!
-                </p>                 
+                </p>
 
               </div>
-              
+
               <div className="mt-12 flex flex-wrap gap-4 relative z-10">
-                <Button 
+                <Button
                   onClick={() => window.open("/Vali_Hameed_CV.pdf", "_blank")}
                   className="bg-white hover:bg-slate-200 text-black border-none uppercase tracking-widest font-bold rounded-none px-8 py-6 h-auto"
                 >
                   View CV
                 </Button>
-                <Button 
+                <Button
                   onClick={() => scrollToSection("contact")}
                   variant="outline"
                   className="border-purple-600 text-purple-400 hover:bg-purple-600 hover:text-white uppercase tracking-widest font-bold rounded-none px-8 py-6 h-auto"
@@ -321,7 +320,7 @@ const Portfolio = () => {
               <div className="h-1 w-20 bg-purple-600 mx-auto mb-6" />
               <h3 className="text-4xl md:text-5xl font-black text-white">Skills & Tech</h3>
             </div>
-            
+
             <div className="grid md:grid-cols-3 gap-6">
               {skills.map((skill, idx) => (
                 <Card key={idx} className="bg-[#0f081c] border-purple-900/30 rounded-none">
@@ -333,7 +332,7 @@ const Portfolio = () => {
                   </CardHeader>
                   <CardContent className="pt-6">
                     <div className="flex flex-wrap gap-2">
-                       {skill.items.map((item) => (
+                      {skill.items.map((item) => (
                         <Badge key={item} variant="secondary" className="bg-purple-900/20 text-purple-200 hover:bg-purple-800/40 rounded-sm font-medium border border-purple-800/30 px-3 py-1">
                           {item}
                         </Badge>
@@ -357,11 +356,10 @@ const Portfolio = () => {
 
             <div className="grid md:grid-cols-2 gap-8">
               {projects.map((project, index) => (
-                <Card 
+                <Card
                   key={index}
-                  className={`bg-[#0A0512] border border-purple-900/30 overflow-hidden rounded-none ${
-                    project.featured ? "md:col-span-2" : ""
-                  }`}
+                  className={`bg-[#0A0512] border border-purple-900/30 overflow-hidden rounded-none ${project.featured ? "md:col-span-2" : ""
+                    }`}
                 >
                   <div className="flex flex-col md:flex-row h-full">
                     <div className={`${project.featured ? "md:w-1/2" : "w-full"} relative`}>
@@ -393,15 +391,15 @@ const Portfolio = () => {
                         </div>
                       )}
                     </div>
-                    
+
                     <div className={`${project.featured ? "md:w-1/2" : "w-full"} p-8 flex flex-col justify-between`}>
                       <div>
-                        {(!project.featured) && <h3 className="text-2xl font-black text-white uppercase tracking-widest mb-4">{}</h3>}
+                        {(!project.featured) && <h3 className="text-2xl font-black text-white uppercase tracking-widest mb-4">{ }</h3>}
                         <p className="text-slate-400 leading-relaxed font-light mb-6">
                           {project.description}
                           {project.link && (
-                            <a 
-                              href={project.link} 
+                            <a
+                              href={project.link}
                               target="_blank"           /* Opens in a new tab */
                               rel="noopener noreferrer"  /* Security best practice */
                               className="text-purple-400 hover:text-purple-600 font-semibold ml-1"
@@ -409,7 +407,7 @@ const Portfolio = () => {
                               Try it out!
                             </a>
                           )}
-                          
+
                         </p>
                         <div className="flex flex-wrap gap-2 mb-8">
                           {project.tech.map((tech) => (
@@ -419,30 +417,30 @@ const Portfolio = () => {
                           ))}
                         </div>
                       </div>
-                      
+
                       <div className="flex flex-wrap gap-4 auto-mt">
-                        <Button 
+                        <Button
                           onClick={() => window.open(project.github, "_blank", "noopener,noreferrer")}
-                          variant="default" 
+                          variant="default"
                           className="bg-white hover:bg-slate-200 text-black rounded-none uppercase tracking-wider font-bold h-12 px-6"
                         >
                           <Github className="mr-2 h-4 w-4" /> Code
                         </Button>
-                        
+
                         {project.playbackId && activeVideo !== project.title && (
-                          <Button 
+                          <Button
                             onClick={() => toggleVideoPlayer(project.title)}
-                            variant="outline" 
+                            variant="outline"
                             className="border-purple-600 text-purple-400 hover:bg-purple-900 hover:text-white rounded-none uppercase tracking-wider font-bold h-12 px-6"
                           >
                             <PlayCircle className="mr-2 h-4 w-4" /> Demo
                           </Button>
                         )}
-                        
+
                         {activeVideo === project.title && (
-                          <Button 
+                          <Button
                             onClick={() => toggleVideoPlayer(project.title)}
-                            variant="outline" 
+                            variant="outline"
                             className="border-red-600/50 text-red-400 hover:bg-red-900/30 hover:text-white rounded-none uppercase tracking-wider font-bold h-12 px-6"
                           >
                             <XCircle className="mr-2 h-4 w-4" /> Close
@@ -468,7 +466,7 @@ const Portfolio = () => {
                 Ready to tackle the next big challenge. Whether you&apos;re building something ambitious or looking for a dedicated engineer. Let&apos;s connect.
               </p>
             </div>
-            
+
             <div className="grid md:grid-cols-5 gap-8">
               <div className="md:col-span-2 space-y-4">
                 <a href="mailto:valihameed88@gmail.com" className="flex items-center p-6 bg-[#0f081c] border border-purple-900/30 hover:border-purple-500/50 transition-colors group">
@@ -480,7 +478,7 @@ const Portfolio = () => {
                     <p className="text-slate-400 text-sm break-all">valihameed88@gmail.com</p>
                   </div>
                 </a>
-                
+
                 <a href="https://www.linkedin.com/in/vali-hameed" target="_blank" rel="noopener noreferrer" className="flex items-center p-6 bg-[#0f081c] border border-purple-900/30 hover:border-purple-500/50 transition-colors group">
                   <div className="bg-purple-900/20 p-4 mr-4">
                     <Linkedin className="text-purple-400 group-hover:scale-110 transition-transform" size={24} />
@@ -490,7 +488,7 @@ const Portfolio = () => {
                     <p className="text-slate-400 text-sm">Let&apos;s Connect</p>
                   </div>
                 </a>
-                
+
                 <a href="https://github.com/Vali-Hameed" target="_blank" rel="noopener noreferrer" className="flex items-center p-6 bg-[#0f081c] border border-purple-900/30 hover:border-purple-500/50 transition-colors group">
                   <div className="bg-purple-900/20 p-4 mr-4">
                     <Github className="text-purple-400 group-hover:scale-110 transition-transform" size={24} />
@@ -506,12 +504,12 @@ const Portfolio = () => {
                 <form action="https://formspree.io/f/xyzdngel" method="POST" className="bg-[#0f081c] border border-purple-900/30 p-8 space-y-6">
                   <div className="grid grid-cols-2 gap-6">
                     <div className="col-span-2 md:col-span-1 space-y-2">
-                       <label htmlFor="email" className="text-xs font-bold uppercase tracking-widest text-slate-400">Email Address</label>
-                       <Input id="email" type="email" name="email" required placeholder="name@email.com" className="bg-[#0A0512] border-purple-900/50 focus-visible:ring-purple-500 rounded-none h-12 text-slate-200 placeholder:text-slate-700" />
+                      <label htmlFor="email" className="text-xs font-bold uppercase tracking-widest text-slate-400">Email Address</label>
+                      <Input id="email" type="email" name="email" required placeholder="name@email.com" className="bg-[#0A0512] border-purple-900/50 focus-visible:ring-purple-500 rounded-none h-12 text-slate-200 placeholder:text-slate-700" />
                     </div>
                     <div className="col-span-2 md:col-span-1 space-y-2">
-                       <label htmlFor="subject" className="text-xs font-bold uppercase tracking-widest text-slate-400">Subject</label>
-                       <Input id="subject" type="text" name="subject" required placeholder="Opportunity..." className="bg-[#0A0512] border-purple-900/50 focus-visible:ring-purple-500 rounded-none h-12 text-slate-200 placeholder:text-slate-700" />
+                      <label htmlFor="subject" className="text-xs font-bold uppercase tracking-widest text-slate-400">Subject</label>
+                      <Input id="subject" type="text" name="subject" required placeholder="Opportunity..." className="bg-[#0A0512] border-purple-900/50 focus-visible:ring-purple-500 rounded-none h-12 text-slate-200 placeholder:text-slate-700" />
                     </div>
                   </div>
                   <div className="space-y-2">
