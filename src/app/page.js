@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import React, { useState, useEffect } from "react";
 import {
   Github,
@@ -100,13 +100,14 @@ const Portfolio = () => {
       link: "https://leedshack2026-prototype.vercel.app/"
     },
     {
-      title: "UFC Fight Predictor 🤼‍♂️🥊 ",
-      description: "A machine learning application that uses a logistic regression model to predict UFC fight outcomes and serves the predictions through a containerized FastAPI application.",
-      tech: ["Python", "AWS ECS", "Docker", "Scikit-learn", "Pandas", "FastAPI", "Logistic Regression", "REST API", "Machine Learning", "Predictive Modeling", "Data Preprocessing"],
-      github: "https://github.com/Vali-Hameed/UFC-Fight-Predictor",
+      title: "Fight Picks 🤼‍♂️🥊 ",
+      description: "A full-stack, microservices-oriented platform for UFC fight analysis. It features a Next.js frontend, a Spring Boot REST API, a Python scraper, and a FastAPI machine learning service using a Gradient Boosting Classifier to predict fight outcomes.",
+      tech: ["Next.js", "TypeScript", "Spring Boot", "Java", "Python", "FastAPI", "Scikit-Learn", "Gradient Boosting", "Docker", "AWS ECS", "PostgreSQL", "Oracle VPS"],
+      github: "https://github.com/Vali-Hameed/UFC-Fight-Predictor-Website",
       featured: true,
       playbackId: "01500v4x01zg75C02qtqZXtLqJwG4SeUdw2sbS00XqHRO8q00",
-      image: "bg-gradient-to-br from-purple-800 to-indigo-950"
+      image: "bg-gradient-to-br from-purple-800 to-indigo-950",
+      link: "https://fightpicks.net"
     },
     {
       title: "Tram Network Pathfinding 🚋",
@@ -284,7 +285,7 @@ const Portfolio = () => {
                 </p>
                 <p>
                   When I&apos;m not studying or working on my startup, I love to use my skills to explore personal interests.
-                  As a big MMA fan (Muay Thai & Kickboxing enthusiast), I challenged myself to build a UFC Fight Predictor, creating a secure RESTful API with Java Spring Boot and a Python ML model tracking a 66% accuracy rate on fight outcomes.
+                  As a big MMA fan (Muay Thai & Kickboxing enthusiast), I challenged myself to build <a href="https://fightpicks.net" target="_blank" rel="noopener noreferrer" className="text-purple-300 hover:underline font-semibold">Fight Picks</a>, a full-stack microservices platform for UFC fight analysis. The architecture includes a Next.js frontend, a secure Spring Boot REST API, an automated Python data scraper, and a FastAPI machine learning service powered by a Gradient Boosting model that tracks a 66% accuracy rate on fight outcomes.
                 </p>
                 <p>
                   I am always eager to connect with like-minded individuals, whether it&apos;s for collaboration, mentorship, or just to chat about the latest in tech and MMA.
