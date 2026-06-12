@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import React, { useState, useEffect } from "react";
 import {
   Github,
@@ -85,7 +85,7 @@ const Portfolio = () => {
   const skills = [
     { category: "Frontend", icon: Globe, items: ["React", "Next.js", "Java Swing", "Tailwind CSS", "TypeScript", "Shadcn UI", "React Native"] },
     { category: "Backend", icon: Database, items: ["Python", "Spring Boot", "Java", "FastAPI", "Django", "Haskell", "Node.js", "Flask"] },
-    { category: "Tools & Infrastructure", icon: Code, items: ["Git", "Docker", "AWS", "Azure", "MongoDB", "PostgreSQL", "MySQL"] }
+    { category: "Tools & Infrastructure", icon: Code, items: ["Git", "Docker", "AWS", "Azure", "Oracle Cloud", "MongoDB", "PostgreSQL", "MySQL"] }
   ];
 
   const projects = [
