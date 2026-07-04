@@ -82,6 +82,15 @@ const Portfolio = () => {
     }, 100);
   };
 
+  const handleProjectMediaKeyDown = (event, projectTitle, hasPlayback) => {
+    if (!hasPlayback) return;
+
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      toggleVideoPlayer(projectTitle);
+    }
+  };
+
   const skills = [
     { category: "Frontend", icon: Globe, items: ["React", "Next.js", "Java Swing", "Tailwind CSS", "TypeScript", "Shadcn UI", "React Native"] },
     { category: "Backend", icon: Database, items: ["Python", "Spring Boot", "Java", "FastAPI", "Django", "Haskell", "Node.js", "Flask"] },
@@ -137,11 +146,12 @@ const Portfolio = () => {
 
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-[#06000c]/80 backdrop-blur-md z-50 border-b border-purple-900/40">
-        <div className="px-6 sm:px-4 lg:px-26">
+        <div className="px-4 sm:px-6 lg:px-10">
           <div className="flex justify-between items-center py-4">
             <a
               href="#home"
               onClick={(e) => { e.preventDefault(); scrollToSection("home"); }}
+              aria-label="Go to home section"
               className="flex items-center space-x-3 group"
             >
               <div className="w-10 h-10 rounded-sm bg-purple-600/20 border border-purple-500/50 flex flex-col items-center justify-center transform rotate-3 transition-transform group-hover:rotate-0">
@@ -168,6 +178,7 @@ const Portfolio = () => {
             <button
               className="md:hidden text-slate-300 hover:text-purple-400"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -200,7 +211,7 @@ const Portfolio = () => {
 
       <main className="relative z-10">
         {/* Hero Section */}
-        <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden px-4 pt-16">
+        <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden px-4 sm:px-6 pt-16">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-purple-900/20 blur-[120px] rounded-full pointer-events-none" />
 
           <motion.div
@@ -214,11 +225,11 @@ const Portfolio = () => {
               <span>Discipline in Code. Precision in Delivery.</span>
             </div>
 
-            <h1 className="text-6xl md:text-8xl font-black mb-6 tracking-tighter text-white">
+            <h1 className="text-5xl sm:text-6xl md:text-8xl font-black mb-6 tracking-tighter text-white leading-[0.95]">
               VALI <span className="text-transparent bg-clip-text bg-gradient-to-br from-purple-400 to-indigo-600">HAMEED</span>
             </h1>
 
-            <p className="text-lg md:text-2xl text-slate-400 font-light mb-10 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg md:text-2xl text-slate-400 font-light mb-10 max-w-2xl mx-auto leading-relaxed">
               Software Engineer focused on full-stack product delivery, scalable backend systems, and applied machine learning.
             </p>
 
@@ -250,6 +261,7 @@ const Portfolio = () => {
             initial={{ opacity: 0 }}
             animate={isHeroVisible ? { opacity: 1 } : {}}
             transition={{ duration: 0.8, delay: 1 }}
+            aria-label="Scroll to about section"
             className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-purple-400 hover:text-purple-300 transition-colors cursor-pointer z-20"
           >
             <ChevronDown size={40} />
@@ -257,15 +269,15 @@ const Portfolio = () => {
         </section>
 
         {/* About Section */}
-        <section id="about" className="py-24 px-4 relative">
+        <section id="about" className="py-20 sm:py-24 px-4 sm:px-6 relative">
           <div className="max-w-4xl mx-auto">
             <div className="mb-16">
               <h2 className="text-sm font-bold tracking-widest text-purple-400 uppercase mb-2">My Journey</h2>
               <div className="h-1 w-20 bg-purple-600 mb-6" />
-              <h3 className="text-4xl md:text-5xl font-black text-white">About Me</h3>
+              <h3 className="text-3xl sm:text-4xl md:text-5xl font-black text-white leading-tight">About Me</h3>
             </div>
 
-            <div className="bg-[#0A0512] border border-purple-900/30 p-8 md:p-12 relative overflow-hidden">
+            <div className="bg-[#0A0512] border border-purple-900/30 p-6 sm:p-8 md:p-12 relative overflow-hidden">
               <div className="absolute top-0 right-0 p-8 opacity-[0.05] pointer-events-none">
                 <svg className="w-64 h-64" viewBox="0 0 24 24" fill="currentColor">
                   {/* Subtle martial arts touch/ abstract shape */}
@@ -315,15 +327,15 @@ const Portfolio = () => {
         </section>
 
         {/* Skills Section */}
-        <section id="skills" className="py-24 px-4 bg-[#0A0512]/50 border-y border-purple-900/20">
+        <section id="skills" className="py-20 sm:py-24 px-4 sm:px-6 bg-[#0A0512]/50 border-y border-purple-900/20">
           <div className="max-w-6xl mx-auto">
             <div className="mb-16 text-center">
               <h2 className="text-sm font-bold tracking-widest text-purple-400 uppercase mb-2">Arsenal</h2>
               <div className="h-1 w-20 bg-purple-600 mx-auto mb-6" />
-              <h3 className="text-4xl md:text-5xl font-black text-white">Skills & Tech</h3>
+              <h3 className="text-3xl sm:text-4xl md:text-5xl font-black text-white leading-tight">Skills & Tech</h3>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-3 gap-5 sm:gap-6">
               {skills.map((skill, idx) => (
                 <Card key={idx} className="bg-[#0f081c] border-purple-900/30 rounded-none">
                   <CardHeader className="flex flex-row items-center space-y-0 gap-4 border-b border-purple-900/30 pb-4">
@@ -348,15 +360,15 @@ const Portfolio = () => {
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="py-24 px-4">
+        <section id="projects" className="py-20 sm:py-24 px-4 sm:px-6">
           <div className="max-w-7xl mx-auto">
             <div className="mb-16">
               <h2 className="text-sm font-bold tracking-widest text-purple-400 uppercase mb-2">Execution</h2>
               <div className="h-1 w-20 bg-purple-600 mb-6" />
-              <h3 className="text-4xl md:text-5xl font-black text-white">Featured Projects</h3>
+              <h3 className="text-3xl sm:text-4xl md:text-5xl font-black text-white leading-tight">Featured Projects</h3>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
               {projects.map((project, index) => (
                 <Card
                   key={index}
@@ -373,6 +385,10 @@ const Portfolio = () => {
                         <div
                           className={`h-64 md:h-full w-full ${project.image} flex items-center justify-center relative cursor-pointer group`}
                           onClick={() => project.playbackId && toggleVideoPlayer(project.title)}
+                          onKeyDown={(event) => handleProjectMediaKeyDown(event, project.title, Boolean(project.playbackId))}
+                          role={project.playbackId ? "button" : undefined}
+                          tabIndex={project.playbackId ? 0 : undefined}
+                          aria-label={project.playbackId ? `Play demo video for ${project.title}` : undefined}
                         >
                           <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors" />
                           {project.featured && (
@@ -458,12 +474,12 @@ const Portfolio = () => {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="py-24 px-4 bg-[#0A0512]/50 border-t border-purple-900/20">
+        <section id="contact" className="py-20 sm:py-24 px-4 sm:px-6 bg-[#0A0512]/50 border-t border-purple-900/20">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-sm font-bold tracking-widest text-purple-400 uppercase mb-2">Engage</h2>
               <div className="h-1 w-20 bg-purple-600 mx-auto mb-6" />
-              <h3 className="text-4xl md:text-5xl font-black text-white">Let&apos;s Work Together</h3>
+              <h3 className="text-3xl sm:text-4xl md:text-5xl font-black text-white leading-tight">Let&apos;s Work Together</h3>
               <p className="text-slate-400 mt-6 max-w-xl mx-auto font-light">
                 Ready to tackle the next big challenge. Whether you&apos;re building something ambitious or looking for a dedicated engineer. Let&apos;s connect.
               </p>
@@ -471,7 +487,7 @@ const Portfolio = () => {
 
             <div className="grid md:grid-cols-5 gap-8">
               <div className="md:col-span-2 space-y-4">
-                <a href="mailto:valihameed88@gmail.com" className="flex items-center p-6 bg-[#0f081c] border border-purple-900/30 hover:border-purple-500/50 transition-colors group">
+                <a href="mailto:valihameed88@gmail.com" aria-label="Email Vali Hameed" className="flex items-center p-6 bg-[#0f081c] border border-purple-900/30 hover:border-purple-500/50 transition-colors group">
                   <div className="bg-purple-900/20 p-4 mr-4">
                     <Mail className="text-purple-400 group-hover:scale-110 transition-transform" size={24} />
                   </div>
@@ -481,7 +497,7 @@ const Portfolio = () => {
                   </div>
                 </a>
 
-                <a href="https://www.linkedin.com/in/vali-hameed" target="_blank" rel="noopener noreferrer" className="flex items-center p-6 bg-[#0f081c] border border-purple-900/30 hover:border-purple-500/50 transition-colors group">
+                <a href="https://www.linkedin.com/in/vali-hameed" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profile" className="flex items-center p-6 bg-[#0f081c] border border-purple-900/30 hover:border-purple-500/50 transition-colors group">
                   <div className="bg-purple-900/20 p-4 mr-4">
                     <Linkedin className="text-purple-400 group-hover:scale-110 transition-transform" size={24} />
                   </div>
@@ -491,7 +507,7 @@ const Portfolio = () => {
                   </div>
                 </a>
 
-                <a href="https://github.com/Vali-Hameed" target="_blank" rel="noopener noreferrer" className="flex items-center p-6 bg-[#0f081c] border border-purple-900/30 hover:border-purple-500/50 transition-colors group">
+                <a href="https://github.com/Vali-Hameed" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile" className="flex items-center p-6 bg-[#0f081c] border border-purple-900/30 hover:border-purple-500/50 transition-colors group">
                   <div className="bg-purple-900/20 p-4 mr-4">
                     <Github className="text-purple-400 group-hover:scale-110 transition-transform" size={24} />
                   </div>

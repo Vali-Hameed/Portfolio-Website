@@ -46,6 +46,29 @@
   body {
     background-color: var(--background);
     color: var(--foreground);
+    text-rendering: optimizeLegibility;
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  p {
+    line-height: 1.75;
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  [role="button"]:focus-visible {
+    outline: 2px solid #a855f7;
+    outline-offset: 2px;
   }
 }
 
