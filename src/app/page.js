@@ -230,7 +230,7 @@ const Portfolio = () => {
             </h1>
 
             <p className="text-base sm:text-lg md:text-2xl text-slate-400 font-light mb-10 max-w-2xl mx-auto leading-relaxed">
-              Software Engineer focused on full-stack product delivery, scalable backend systems, and applied machine learning.
+              Software Engineer | Full-Stack Developer | Applied Machine Learning | MMA Enthusiast
             </p>
 
             <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
@@ -293,8 +293,8 @@ const Portfolio = () => {
                 </p>
                 <p>
                   My professional experience is defined by a mix of entrepreneurial leadership and hands-on engineering.
-                  I was the Co-Founder and Lead Engineer at <a href="https://www.linkedin.com/company/picky-eater/" target="_blank" rel="noopener noreferrer" className="text-purple-300 hover:underline font-semibold">Picky Eater</a> (2024-2026), where I led the development of a web and mobile application using Django, React, and React Native while also owning roadmap planning and CI/CD pipelines.
-                  Previously, I worked as a Software Engineering Intern at <a href="https://www.digbyswift.com/" target="_blank" rel="noopener noreferrer" className="text-purple-300 hover:underline font-semibold">DigbySwift</a> (2025), where I gained experience in mobile development with Dart and Flutter.
+                  I was the Co-Founder and Lead Engineer at <a href="https://www.linkedin.com/company/picky-eater/" target="_blank" rel="noopener noreferrer" className="text-purple-300 hover:underline font-semibold">Picky Eater</a>, where I led the development of a web and mobile application using Django, React, and React Native while also owning roadmap planning and CI/CD pipelines.
+                  Previously, I worked as a Software Engineering Intern at <a href="https://www.digbyswift.com/" target="_blank" rel="noopener noreferrer" className="text-purple-300 hover:underline font-semibold">DigbySwift</a>, where I gained experience in mobile development with Dart and Flutter.
                 </p>
                 <p>
                   When I&apos;m not studying, I love to use my skills to explore personal interests.
