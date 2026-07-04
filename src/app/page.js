@@ -89,19 +89,9 @@ const Portfolio = () => {
   ];
 
   const projects = [
-    {
-      title: "Orbital Risk 🚀",
-      description: "A 3D launch-window optimisation system combining debris exposure modelling and machine-learned weather risk. Won runner up 🥈 at Leeds Hack 2026 Parallax challenge.",
-      tech: ["Python", "Next.js", "TypeScript", "React", "Scikit-Learn", "FastAPI", "Machine Learning", "Pandas"],
-      github: "https://github.com/akaltemamey/leedshack2026-prototype",
-      featured: true,
-      playbackId: "H01zheI02jcSjaNxqBWvcMFzshysbc4IOx029i5UEjDBaM",
-      image: "bg-gradient-to-br from-purple-800 to-indigo-950",
-      link: "https://leedshack2026-prototype.vercel.app/"
-    },
-    {
+        {
       title: "Fight Picks 🤼‍♂️🥊 ",
-      description: "A full-stack, microservices-oriented platform for UFC fight analysis. It features a Next.js frontend, a Spring Boot REST API, a Python scraper, and a FastAPI machine learning service using a Gradient Boosting Classifier to predict fight outcomes.",
+      description: "A full-stack, microservices-oriented platform for UFC fight analysis. It includes a Next.js frontend, Spring Boot REST API, Python data scraper, and a FastAPI ML service using Gradient Boosting, currently tracking 66% prediction accuracy.",
       tech: ["Next.js", "TypeScript", "Spring Boot", "Java", "Python", "FastAPI", "Scikit-Learn", "Gradient Boosting", "Docker", "AWS ECS", "PostgreSQL", "Oracle VPS"],
       github: "https://github.com/Vali-Hameed/UFC-Fight-Predictor-Website",
       featured: true,
@@ -109,6 +99,17 @@ const Portfolio = () => {
       image: "bg-gradient-to-br from-purple-800 to-indigo-950",
       link: "https://fightpicks.net"
     },
+    {
+      title: "Orbital Risk 🚀",
+      description: "A 3D launch-window optimisation platform combining debris exposure modelling with machine-learned weather risk scoring. Built and shipped during Leeds Hack 2026, where it won runner-up 🥈 in the Parallax challenge.",
+      tech: ["Python", "Next.js", "TypeScript", "React", "Scikit-Learn", "FastAPI", "Machine Learning", "Pandas"],
+      github: "https://github.com/akaltemamey/leedshack2026-prototype",
+      featured: true,
+      playbackId: "H01zheI02jcSjaNxqBWvcMFzshysbc4IOx029i5UEjDBaM",
+      image: "bg-gradient-to-br from-purple-800 to-indigo-950",
+      link: "https://leedshack2026-prototype.vercel.app/"
+    },
+
     {
       title: "Tram Network Pathfinding 🚋",
       description: "Advanced Java application implementing Dijkstra's algorithm and custom pathfinding for optimal tram route calculation with GUI visualization and delay simulation.",
@@ -200,7 +201,7 @@ const Portfolio = () => {
       <main className="relative z-10">
         {/* Hero Section */}
         <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden px-4 pt-16">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-purple-900/20 blur-[120px] rounded-full point-events-none" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-purple-900/20 blur-[120px] rounded-full pointer-events-none" />
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -218,7 +219,7 @@ const Portfolio = () => {
             </h1>
 
             <p className="text-lg md:text-2xl text-slate-400 font-light mb-10 max-w-2xl mx-auto">
-              2nd Year Computer Science Student | Software Engineer | Entrepreneur | Full-Stack Developer | MMA Enthusiast
+              Software Engineer focused on full-stack product delivery, scalable backend systems, and applied machine learning.
             </p>
 
             <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
@@ -230,13 +231,13 @@ const Portfolio = () => {
                 View My Work
               </Button>
               <div className="flex space-x-4">
-                <a href="mailto:valihameed88@gmail.com" className="p-4 border border-purple-900/50 bg-[#0A0512] hover:bg-purple-900/30 hover:border-purple-500/50 transition-all text-slate-300">
+                <a href="mailto:valihameed88@gmail.com" aria-label="Email Vali Hameed" className="p-4 border border-purple-900/50 bg-[#0A0512] hover:bg-purple-900/30 hover:border-purple-500/50 transition-all text-slate-300">
                   <Mail size={20} />
                 </a>
-                <a href="https://github.com/Vali-Hameed" target="_blank" rel="noopener noreferrer" className="p-4 border border-purple-900/50 bg-[#0A0512] hover:bg-purple-900/30 hover:border-purple-500/50 transition-all text-slate-300">
+                <a href="https://github.com/Vali-Hameed" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile" className="p-4 border border-purple-900/50 bg-[#0A0512] hover:bg-purple-900/30 hover:border-purple-500/50 transition-all text-slate-300">
                   <Github size={20} />
                 </a>
-                <a href="https://www.linkedin.com/in/vali-hameed" target="_blank" rel="noopener noreferrer" className="p-4 border border-purple-900/50 bg-[#0A0512] hover:bg-purple-900/30 hover:border-purple-500/50 transition-all text-slate-300">
+                <a href="https://www.linkedin.com/in/vali-hameed" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profile" className="p-4 border border-purple-900/50 bg-[#0A0512] hover:bg-purple-900/30 hover:border-purple-500/50 transition-all text-slate-300">
                   <Linkedin size={20} />
                 </a>
               </div>
@@ -280,8 +281,8 @@ const Portfolio = () => {
                 </p>
                 <p>
                   My professional experience is defined by a mix of entrepreneurial leadership and hands-on engineering.
-                  I was the Co-Founder and Lead Engineer at <a href="https://www.linkedin.com/company/picky-eater/" target="_blank" rel="noopener noreferrer" className="text-purple-300 hover:underline font-semibold">Picky Eater</a>, where I led the development of a web and mobile application using Django, React, and React Native, while also managing the product roadmap and CI/CD pipelines.
-                  Previously, I worked as a Software Engineering Intern at <a href="https://www.digbyswift.com/" target="_blank" rel="noopener noreferrer" className="text-purple-300 hover:underline font-semibold">DigbySwift</a>, where I gained experience in mobile development with Dart and Flutter.
+                  I was the Co-Founder and Lead Engineer at <a href="https://www.linkedin.com/company/picky-eater/" target="_blank" rel="noopener noreferrer" className="text-purple-300 hover:underline font-semibold">Picky Eater</a> (2024-2026), where I led the development of a web and mobile application using Django, React, and React Native while also owning roadmap planning and CI/CD pipelines.
+                  Previously, I worked as a Software Engineering Intern at <a href="https://www.digbyswift.com/" target="_blank" rel="noopener noreferrer" className="text-purple-300 hover:underline font-semibold">DigbySwift</a> (2025), where I gained experience in mobile development with Dart and Flutter.
                 </p>
                 <p>
                   When I&apos;m not studying, I love to use my skills to explore personal interests.
@@ -395,19 +396,9 @@ const Portfolio = () => {
 
                     <div className={`${project.featured ? "md:w-1/2" : "w-full"} p-8 flex flex-col justify-between`}>
                       <div>
-                        {(!project.featured) && <h3 className="text-2xl font-black text-white uppercase tracking-widest mb-4">{ }</h3>}
+                        {!project.featured && <h3 className="text-2xl font-black text-white uppercase tracking-widest mb-4">{project.title}</h3>}
                         <p className="text-slate-400 leading-relaxed font-light mb-6">
                           {project.description}
-                          {project.link && (
-                            <a
-                              href={project.link}
-                              target="_blank"           /* Opens in a new tab */
-                              rel="noopener noreferrer"  /* Security best practice */
-                              className="text-purple-400 hover:text-purple-600 font-semibold ml-1"
-                            >
-                              Try it out!
-                            </a>
-                          )}
 
                         </p>
                         <div className="flex flex-wrap gap-2 mb-8">
@@ -419,7 +410,17 @@ const Portfolio = () => {
                         </div>
                       </div>
 
-                      <div className="flex flex-wrap gap-4 auto-mt">
+                      <div className="flex flex-wrap gap-4 mt-auto">
+                        {project.link && (
+                          <Button
+                            onClick={() => window.open(project.link, "_blank", "noopener,noreferrer")}
+                            variant="outline"
+                            className="border-emerald-500/60 text-emerald-300 hover:bg-emerald-700/20 hover:text-emerald-100 rounded-none uppercase tracking-wider font-bold h-12 px-6"
+                          >
+                            <Globe className="mr-2 h-4 w-4" /> Live
+                          </Button>
+                        )}
+
                         <Button
                           onClick={() => window.open(project.github, "_blank", "noopener,noreferrer")}
                           variant="default"
