@@ -15,15 +15,12 @@ import {
   ChevronDown
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-
-import MuxVideoPlayer from "../../components/MuxVideoPlayer.js";
-
-// Shadcn UI components
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import MuxVideoPlayer from "@/components/MuxVideoPlayer";
 
 const Portfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -117,6 +114,16 @@ const Portfolio = () => {
       playbackId: "H01zheI02jcSjaNxqBWvcMFzshysbc4IOx029i5UEjDBaM",
       image: "bg-gradient-to-br from-purple-800 to-indigo-950",
       link: "https://leedshack2026-prototype.vercel.app/"
+    },
+    {
+      title: "Penalty Shootout Predictor ⚽",
+      description: "Bayesian Monte Carlo shootout predictor built with a Next.js frontend and FastAPI backend, using open football data to estimate scorer and keeper tendencies.",
+      tech: ["Next.js", "FastAPI", "Python", "Monte Carlo", "Bayesian Inference", "StatsBomb"],
+      github: "https://github.com/Vali-Hameed/Penalty-Shootout-Predictor",
+      featured: false,
+      playbackId: "TJqX2iFsXFggJ02UdAEjy6wBON3D7x3RmjoorLh6f02h8",
+      image: "bg-gradient-to-br from-[#1e0b2b] to-purple-900 border border-purple-800/50",
+      link: "https://penalty-shootout-predictor.vercel.app/"
     },
 
     {
