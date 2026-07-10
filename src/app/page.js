@@ -125,6 +125,13 @@ const Portfolio = () => {
       image: "bg-gradient-to-br from-[#1e0b2b] to-purple-900 border border-purple-800/50",
       link: "https://penalty-shootout-predictor.vercel.app/"
     },
+    {
+      title: "ML Classifiers from Scratch 🧠",
+      description: "Developed K-Nearest Neighbors, Naive Bayes, and Decision Tree classification algorithms entirely from scratch using pure mathematics, without relying on high-level ML libraries. The project applies custom distance metrics, probability density functions, and entropy-based splitting logic to classify the UCI Glass dataset, showcasing a deep understanding of core algorithmic foundations.",
+      tech: ["Machine Learning", "Python", "Pure Mathematics", "Algorithms", "Data Analysis"],
+      github: "https://github.com/vali-hameed/knn-nb-and-dt",
+      image: "bg-gradient-to-br from-[#1e0b2b] to-purple-900 border border-purple-800/50",
+      featured: false},
 
     {
       title: "Tram Network Pathfinding 🚋",
