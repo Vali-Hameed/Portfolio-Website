@@ -131,8 +131,16 @@ const Portfolio = () => {
       tech: ["Machine Learning", "Python", "Pure Mathematics", "Algorithms", "Data Analysis"],
       github: "https://github.com/vali-hameed/knn-nb-and-dt",
       image: "bg-gradient-to-br from-[#1e0b2b] to-purple-900 border border-purple-800/50",
-      featured: false},
-
+      featured: false
+    },
+    {
+      title: "Parcel Sort CLI 📦",
+      description: "A functional Haskell command-line application that parses, classifies, custom-sorts, and greedily bundles mail items according to strict dimension and weight constraints.",
+      tech: ["Haskell", "Functional Programming", "QuickSort", "Greedy Algorithms", "File I/O"],
+      github: "https://github.com/vali-hameed/parcel-sort-haskell",
+      image: "bg-gradient-to-br from-[#1e0b2b] to-purple-900 border border-purple-800/50",
+      featured: false
+    },
     {
       title: "Tram Network Pathfinding 🚋",
       description: "Advanced Java application implementing Dijkstra's algorithm and custom pathfinding for optimal tram route calculation with GUI visualization and delay simulation.",
