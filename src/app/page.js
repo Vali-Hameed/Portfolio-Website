@@ -426,7 +426,7 @@ const Portfolio = () => {
 
                     <div className={`${project.featured ? "md:w-1/2" : "w-full"} p-8 flex flex-col justify-between`}>
                       <div>
-                        {!project.featured && <h3 className="text-2xl font-black text-white uppercase tracking-widest mb-4">{project.title}</h3>}
+                        {!project.featured && <h3 className="text-2xl font-black text-white uppercase tracking-widest mb-4"></h3>}
                         <p className="text-slate-400 leading-relaxed font-light mb-6">
                           {project.description}
 
