@@ -468,13 +468,15 @@ const Portfolio = () => {
                           </Button>
                         )}
 
-                        <Button
-                          onClick={() => window.open(project.github, "_blank", "noopener,noreferrer")}
-                          variant="default"
-                          className="bg-white hover:bg-slate-200 text-black rounded-none uppercase tracking-wider font-bold h-12 px-6"
-                        >
-                          <Github className="mr-2 h-4 w-4" /> Code
-                        </Button>
+                        {project.github && (
+                          <Button
+                            onClick={() => window.open(project.github, "_blank", "noopener,noreferrer")}
+                            variant="default"
+                            className="bg-white hover:bg-slate-200 text-black rounded-none uppercase tracking-wider font-bold h-12 px-6"
+                          >
+                            <Github className="mr-2 h-4 w-4" /> Code
+                          </Button>
+                        )}
 
                         {project.playbackId && activeVideo !== project.title && (
                           <Button
