@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import React, { useState, useEffect } from "react";
 import {
   Github,
@@ -95,7 +95,7 @@ const Portfolio = () => {
   ];
 
   const projects = [
-        {
+    {
       title: "Fight Picks 🤼‍♂️🥊 ",
       description: "A full-stack, microservices-oriented platform for UFC fight analysis. It includes a Next.js frontend, Spring Boot REST API, Python data scraper, and a FastAPI ML service using Gradient Boosting, currently tracking 66% prediction accuracy.",
       tech: ["Next.js", "TypeScript", "Spring Boot", "Java", "Python", "FastAPI", "Scikit-Learn", "Gradient Boosting", "Docker", "AWS ECS", "PostgreSQL", "Oracle VPS"],
@@ -124,6 +124,14 @@ const Portfolio = () => {
       playbackId: "TJqX2iFsXFggJ02UdAEjy6wBON3D7x3RmjoorLh6f02h8",
       image: "bg-gradient-to-br from-[#1e0b2b] to-purple-900 border border-purple-800/50",
       link: "https://penalty-shootout-predictor.vercel.app/"
+    },
+    {
+      title: "Transport for Lancashire 🚆",
+      description: "A multimodal journey planner for the Lancashire region. The application uses a local OpenTripPlanner (OTP) service for route calculation with a Flask/SQLAlchemy backend and a React/Vite frontend.",
+      tech: ["React", "Flask", "Python", "SQLAlchemy", "OpenTripPlanner", "Docker", "NaPTAN", "OpenStreetMap", "GTFS"],
+      playbackId: "xU2v9A82gltAX00n4UTSvkkcpCgzyq9Bt00K7q3Ay6ZL00",
+      image: "bg-gradient-to-br from-[#1e0b2b] to-purple-900 border border-purple-800/50",
+      featured: false
     },
     {
       title: "ML Classifiers from Scratch 🧠",
@@ -157,7 +165,8 @@ const Portfolio = () => {
       github: "https://github.com/Vali-Hameed/Python-Car-Game-NEA",
       playbackId: "wWW02Pk7AvIcbv9n4wbT01Z2m27gBFYI3KHjtZf02ngO58",
       image: "bg-gradient-to-br from-[#1e0b2b] to-purple-900 border border-purple-800/50"
-    }
+    },
+
   ];
 
   return (
