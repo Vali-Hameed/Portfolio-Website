@@ -126,6 +126,16 @@ const Portfolio = () => {
       link: "https://penalty-shootout-predictor.vercel.app/"
     },
     {
+      title: "Rterm 📱",
+      description: "A native Windows terminal session manager that allows you to detach from long-running PowerShell scripts and securely monitor them from a mobile device. Features include seamless Tailscale integration, strict single-use OTP authentication, and an optimized mobile web-UI with swipe gestures for terminal navigation.",
+      tech: ["Node.js", "JavaScript", "PTY", "Tailscale", "WebSockets", "OTP Auth", "CLI", "Remote Terminal"],
+      github: "https://github.com/Vali-Hameed/Remote-Terminal",
+      image: "bg-gradient-to-br from-[#1e0b2b] to-purple-900 border border-purple-800/50",
+      featured: false,
+      playbackId: "isTMUskRBjCNxND9Yj948Nknp02pN9DPiaNeM1p1yCpA",
+
+    },
+    {
       title: "Transport for Lancashire 🚆",
       description: "A multimodal journey planner for the Lancashire region. The application uses a local OpenTripPlanner (OTP) service for route calculation with a Flask/SQLAlchemy backend and a React/Vite frontend.",
       tech: ["React", "Flask", "Python", "SQLAlchemy", "OpenTripPlanner", "Docker", "NaPTAN", "OpenStreetMap", "GTFS"],
