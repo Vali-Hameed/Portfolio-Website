@@ -169,12 +169,21 @@ const Portfolio = () => {
       featured: false
     },
     {
+      title: "Network Topology Tester 🌐",
+      description: "A custom iperf-inspired network performance testing tool and Mininet simulation environment. Evaluates TCP/UDP bandwidth, packet loss, and jitter with an optional client-side ACK protocol, alongside a multi-router Linux topology featuring custom routing tables, bandwidth constraints, and simulated delay/loss.",
+      tech: ["Python", "Mininet", "Networking", "TCP/UDP Sockets", "Linux Routing", "Traffic Control", "CLI"],
+      github: "https://github.com/Vali-Hameed/network-topology-tester",
+      image: "bg-gradient-to-br from-[#1e0b2b] to-purple-900 border border-purple-800/50",
+      featured: false
+    },
+    {
       title: "Python Car Racing Game 🏁",
       description: "2D racing game built with Pygame featuring multiple tracks, car selection, competitive mode with tire degradation, and local leaderboards.",
       tech: ["Python", "Pygame", "Game Development", "OOP", "File I/O"],
       github: "https://github.com/Vali-Hameed/Python-Car-Game-NEA",
       playbackId: "wWW02Pk7AvIcbv9n4wbT01Z2m27gBFYI3KHjtZf02ngO58",
-      image: "bg-gradient-to-br from-[#1e0b2b] to-purple-900 border border-purple-800/50"
+      image: "bg-gradient-to-br from-[#1e0b2b] to-purple-900 border border-purple-800/50",
+      featured: false
     },
 
   ];
